@@ -9,7 +9,37 @@
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
    <link rel="stylesheet" href="styles/style.css">
 </head> 
-<body>
+<body class="wp-intro--fade">
+   <!-- Video animation intro -->
+   <section scroll="no" class="wp-intro">
+      <video playsinline autoplay muted poster="./video/redi-intro.jpg" class="wp-intro__video" id="bgvid">
+         <source src="./video/redi-intro.webm" type="video/webm">
+         <source src="./video/redi-intro.mp4" type="video/mp4">
+       </video>
+
+      <div class="wp-intro__headline">
+         <h1 class="page-title page-title--intro wp-intro__animation wp-intro__animation--first">Vyrobíme vše. <br> Jakkoliv, z čehokoliv<span class="redi-dot">.</span></h1>
+
+         <h1 class="page-title page-title--intro wp-intro__animation wp-intro__animation--second">Provedeme Vás<span class="redi-dot">.</span> <br> Od začátku až do konce<span class="redi-dot">.</span></h1>
+
+         <h1 class="page-title page-title--intro wp-intro__animation wp-intro__animation--third">Přeměníme Vaše nápady <br> na realitu<span class="redi-dot">.</span></h1>
+
+         <h1 class="page-title page-title--intro wp-intro__animation wp-intro__animation--fourth">Vítejte<span class="redi-dot">.</span> <br> Research Division Industries<span class="redi-dot">.</span></h1>
+      </div>
+
+      <div class="wp-intro__skip">
+         <div class="wp-intro__progress">
+            <p class="wp-intro__slide wp-intro__slide--first skip-fade">1</p>
+            <div class="wp-intro__progress__bar"><span class="wp-intro__progress__line"></span></div>
+            <p class="wp-intro__slide wp-intro__slide--last">4</p>
+         </div>
+         <a href="#" class="wp-intro__skip__btn">přeskočit intro</a>
+      </div>
+   </section>
+
+
+
+<!-- Navbar -->
    <header>
       <div class="menu">
          <a href="/index.html" class="nav__logo"><img src="./logo/logo.png" alt=""></a>
@@ -27,7 +57,7 @@
                <li class="nav__item"><a href="#" class="nav__link">Zákazková výroba</a></li>
                <li class="nav__item"><a href="#" class="nav__link">Prototypová výroba</a></li>
             </ul>
-   
+
             <ul class="nav__list">
                <li class="nav__item"><a href="/index.html" class="nav__link">Homepage</a></li>
                <li class="nav__item"><a href="./contact.html" class="nav__link">Kontakt</a></li>
@@ -39,64 +69,64 @@
       </nav>
    </header>
 
-
-
-   <!-- Introduction -->
-   <section id="redi-home">
-      <div class="intro landingPage-bg">
-         <h1 class="page__title">
-            <span>Research</span>
-            <span>Division</span>
-            <span>Industries</span>
-         </h1>
-      </div>
-   </section>
-
-
-
-   <!-- Who we are -->
-   <section id="redi-about" class="about">
-      <div class="about__item">
-         <h2 class="section__title section__title--lowCase">Kdo jsme?</h2>
-         <p>Jsme nespokojení zákazníci, kteří se rozhodli vzít vlastní spokojenost z rukou prodejců, kteří vytváří akceptovatelné produkty za minimální náklady a maximum zisku.</p>
-
-         <p>Na tom není nic špatného, dokud si produkt nekoupíme a během pokusu o první použití přemýšlíme jestli ho vyhodit z okna nebo do koše. Pak si ale uvědomíte, že nic moc lepšího jinde nedostanete.</p>
+  <main>
+     <!-- Introduction -->
+     <section id="redi-home">
+        <div class="intro landingPage-bg">
+           <h1 class="page-title">
+              <span>Research</span>
+              <span>Division</span>
+              <span>Industries</span>
+           </h1>
+        </div>
+     </section>
+  
+  
+  
+     <!-- Who we are -->
+     <section id="redi-about" class="about">
+        <div class="about__item">
+           <h2 class="section__title section__title--lowCase">Kdo jsme?</h2>
+           <p>Jsme nespokojení zákazníci, kteří se rozhodli vzít vlastní spokojenost z rukou prodejců, kteří vytváří akceptovatelné produkty za minimální náklady a maximum zisku.</p>
+  
+           <p>Na tom není nic špatného, dokud si produkt nekoupíme a během pokusu o první použití přemýšlíme jestli ho vyhodit z okna nebo do koše. Pak si ale uvědomíte, že nic moc lepšího jinde nedostanete.</p>
+     
+           <p>Tak co kdyby bylo možné nespokojit se s akceptovatelným? Od toho jsme tu my.</p>
+           <p>ReDi Industries s.r.o.</p>
+        </div>
+  
+        <div class="about__item">
+           <h2 class="section__title section__title--lowCase">V čem se lišíme?</h2>
+           <ol>
+              <li class="o-list text">Hrajeme fér a zajímá nás Vaše spokojenost. To na čem se domluvíme platí a cena, kterou Vám za Vaši poptávku řekneme, je konečná.</li>
+              <li class="o-list text">Máte nestandardní požadavky, na které Vám jinde řekli ne? Ty my máme nejradši, nebojte se zeptat.</li>
+              <li class="o-list text">Máte nápad na produkt, ale nevíte si rady s jeho realizací a výrobou, nebo potřebujete prototyp? Jsme připraveni na všechno.</li>
+           </ol>
+        </div>
+     </section>
+  
+  
+  
+     <!-- Services -->
+     <section id="redi-services" class="services">
+        <!-- <a href="./contact.html" class="service service__contact">
+           <h3 class="service__title">Kontakt</h3>
+        </a> -->
+  
+        <a href="./logos.html" class="service service__logo">
+           <h3 class="service__title">3D loga & branding</h3>
+        </a>
+  
+        <a href="#" class="service service__manufacturing">
+           <h3 class="service__title">Zákazková výroba</h3>
+        </a>
+  
+        <a href="#" class="service service__prototypes">
+           <h3 class="service__title">Prototypová výroba</h3>
+        </a>
+     </section>
+  </main>
    
-         <p>Tak co kdyby bylo možné nespokojit se s akceptovatelným? Od toho jsme tu my.</p>
-         <p>ReDi Industries s.r.o.</p>
-      </div>
-
-      <div class="about__item">
-         <h2 class="section__title section__title--lowCase">V čem se lišíme?</h2>
-         <ol>
-            <li class="o-list text">Hrajeme fér a zajímá nás Vaše spokojenost. To na čem se domluvíme platí a cena, kterou Vám za Vaši poptávku řekneme, je konečná.</li>
-            <li class="o-list text">Máte nestandardní požadavky, na které Vám jinde řekli ne? Ty my máme nejradši, nebojte se zeptat.</li>
-            <li class="o-list text">Máte nápad na produkt, ale nevíte si rady s jeho realizací a výrobou, nebo potřebujete prototyp? Jsme připraveni na všechno.</li>
-         </ol>
-      </div>
-   </section>
-
-
-
-   <!-- Services -->
-   <section id="redi-services" class="services">
-      <a href="./contact.html" class="service service__contact">
-         <h3 class="service__title">Kontakt</h3>
-      </a>
-
-      <a href="./logos.html" class="service service__logo">
-         <h3 class="service__title">3D loga & branding</h3>
-      </a>
-
-      <a href="#" class="service service__manufacturing">
-         <h3 class="service__title">Zákazková výroba</h3>
-      </a>
-
-      <a href="#" class="service service__prototypes">
-         <h3 class="service__title">Prototypová výroba</h3>
-      </a>
-   </section>
-
 
 
    <!-- Footer -->

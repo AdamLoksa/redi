@@ -539,8 +539,11 @@ section {
 
 .wp-intro {
   height: 100vh;
+  background: #000;
   padding: 0;
   position: relative;
+  -webkit-transition: opacity 0.5s;
+  transition: opacity 0.5s;
 }
 
 .wp-intro__headline {
@@ -657,6 +660,16 @@ section {
   100% {
     opacity: 1;
   }
+}
+
+.stop-scrolling {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.wp-intro--fade {
+  -webkit-transition: opacity 0.7s;
+  transition: opacity 0.7s;
 }
 
 .wp-intro__skip {
