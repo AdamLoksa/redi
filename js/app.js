@@ -67,11 +67,21 @@ if (firstVisit === 0) {
 
 // Menu component
 const navBtn = document.querySelector('.nav-toggle');
+const navIcon = document.querySelector('.nav-toggle__icon');
 const navigation = document.querySelector('.nav');
-const hamburgerIcon = document.querySelector('.hamburger');
+const bodyElement = document.querySelector('body');
 
 navBtn.addEventListener('click', (event) => {
     event.preventDefault();
     navigation.classList.toggle('nav--open');
-    hamburgerIcon.classList.toggle('hamburger--open')
+    navIcon.classList.toggle('nav-toggle--open');
+
+    setTimeout(function() {
+        bodyElement.classList.toggle('stop-scrolling');
+        navigation.classList.toggle('nav--opacity');
+    }, 100);
 });
+
+
+
+
