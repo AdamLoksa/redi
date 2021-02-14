@@ -1,9 +1,21 @@
 <!DOCTYPE html>
 <html lang="cz">
 <head>
+   <!-- Website creator - adamloksa.com -->
+   <!-- Website designer - Honza Tran. -->
+
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>REDI Industries</title>
+
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="manifest" href="/site.webmanifest">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+   
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -45,7 +57,7 @@
          <a href="/index.html" class="nav__logo"><img src="./logo/logo.png" alt=""></a>
 
          <a class="nav-toggle" href="#">
-            <div>Menu</div>
+            <div class="nav-toggle__text">Menu</div>
             <div class="nav-toggle__icon">
                <span></span>
                <span></span>
@@ -110,8 +122,8 @@
      </section>
   
   
-     <!-- About REDI -->
-     <section id="redi-about" class="about">
+     <!-- About REDI old -->
+     <!-- <section id="redi-about" class="about">
         <div class="about__item">
            <h2 class="section__title section__title--lowCase">Kdo jsme?</h2>
            <p>Jsme nespokojení zákazníci, kteří se rozhodli vzít vlastní spokojenost z rukou prodejců, kteří vytváří akceptovatelné produkty za minimální náklady a maximum zisku.</p>
@@ -130,25 +142,87 @@
               <li class="o-list text">Máte nápad na produkt, ale nevíte si rady s jeho realizací a výrobou, nebo potřebujete prototyp? Jsme připraveni na všechno.</li>
            </ol>
         </div>
+     </section> -->
+
+     <!-- Why REDI -->
+     <section id="redi-about" class="why-redi">
+        <h2 class="section__title">Jsme tvořitelé.</h2>
+        <p class="text why-redi__text">Sem pôjde text, ktorý popíše na 2-3 riadky kto je REDI, čo robíme a prečo by si klient mal vybrať práve nás. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#redi-services" class="why-redi__btn">Naša práca</a>
      </section>
   
   
      <!-- REDI Services -->
-     <section id="redi-services" class="services">  
-        <a href="./logos.html" class="service service__logo">
-           <h3 class="service__title">3D loga & branding</h3>
+     <section id="redi-services" class="services">
+        <a href="./logos.html" class="service">
+            <div class="service__img service__logo"></div>
+            <div class="service__hover"></div>
+            <h3 class="service__title">3D loga & branding</h3>
         </a>
   
-        <a href="#" class="service service__manufacturing">
-           <h3 class="service__title">Zákazková výroba</h3>
+        <a href="#" class="service">
+            <div class="service__img service__manufacturing"></div>
+            <div class="service__hover"></div>
+            <h3 class="service__title">Zákazková výroba</h3>
         </a>
   
-        <a href="#" class="service service__prototypes">
-           <h3 class="service__title">Prototypová výroba</h3>
+        <a href="#" class="service">
+            <div class="service__img service__prototypes"></div>
+            <div class="service__hover"></div>
+            <h3 class="service__title">Prototypová výroba</h3>
         </a>
      </section>
+
+
+      <!-- Contact form -->
+      <section class="contact-info">
+         <div class="contact-info__item contact-info__form">
+            <form>
+               <h2 class="section__title">Kontaktujte nás</h2>
+               <ul> 
+                  <li>
+                     <input type="text" id="name" name="user_name" aria-label="name" placeholder="jméno" title="vložte své jméno, např.: Petr Novák" patter="/^[a-zá-ž]+ +[a-zá-ž]+$/i" required>
+                  </li>
+                  
+                  <li>
+                     <input type="text" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                  </li>
+                  
+                  <li>
+                     <input type="text" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
+                  </li>
+                     
+                  <li>
+                     <textarea id="message" name="user_message" aria-label="message" placeholder="Popíšte nám, akú máte predstavu o spracovaní vašej zákazky. Nemusíte sa báť. Ak to zatiaľ neviete, tak Vám s tým pomôžeme."></textarea>
+                  </li>
+
+                  <li>
+                     <label class="contact-info__data" for="data">
+                        Souhlasím se <a class="contact-info__data-link" href="#">zpracováním osobních údajů</a>.
+                        <input type="checkbox" id="data" name="user_data">
+                        <span class="checkmark"></span>
+                        </label>
+                     <!-- <br> -->
+                  </li>
+                  
+                  <li class="contact-info__button">
+                     <button type="submit">Odeslat</button>
+                  </li>
+               </ul>
+            </form>
+         </div>
+
+         <div class="contact-info__item contact-info__headline">
+            <h1 class="contact-title">
+               <span>Everything</span>
+               <span>Was once</span>
+               <span>Impossible <span class="redi-dot--inv">.</span></span>
+            </h1>
+         </div>
+      </section>
   </main>
    
+
 
    <!-- Footer -->
    <footer class="footer">
@@ -164,5 +238,6 @@
 
    <!-- JS Files -->
    <script type="text/javascript" src="js/app.js"></script>
+   <script type="text/javascript" src="js/intro.js"></script>
 </body>
 </html>
