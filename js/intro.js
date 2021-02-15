@@ -56,9 +56,29 @@ const websiteIntro = (function() {
    };
 })(); 
 
-// Session storage to be added
-let firstVisit = 1;
 
-if (firstVisit === 0) {
-   websiteIntro.init();
+// Local storage
+const ctrLocalStorage = (function() {
+    // Set data
+    function saveData() {
+        localStorage.setItem('redi-Intro', 'true');
+    }
+
+    // Load data
+    function loadData() {
+        return localStorage.getItem('redi-Intro');
+    }
+
+    // Clear data
+
+    return {
+        save: saveData,
+        load: loadData
+    };
+})();
+
+if (ctrLocalStorage.load() != 'true') {
+    websiteIntro.init();
+    ctrLocalStorage.save();
 }
+

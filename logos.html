@@ -9,7 +9,6 @@
    <!-- Favicon -->
    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-   <link rel="manifest" href="/site.webmanifest">
    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
    <meta name="msapplication-TileColor" content="#da532c">
    <meta name="theme-color" content="#ffffff">
@@ -79,50 +78,51 @@
    </header>
 
    <main>
-      <!-- Introduction -->
-      <section id="redi-logo">
-         <div class="intro logo--bg">
-            <h1 class="page-title">
-               <span>3D loga & branding</span>
-            </h1>
+         <!-- Introduction -->
+         <section id="redi-logo">
+            <div class="intro logo--bg">
+               <h1 class="page-title">
+                  <span><span class="page-title--red">3D loga</span><span> & </span><span class="page-title--blue">branding</span></span>
+               </h1>
+            </div>
+         </section>
+      
+      <!-- Why REDI -->
+      <section class="why-redi">
+         <h2 class="section__title">Vyrábame 3D logá.</h2>
+         <p class="text why-redi__text">Sem by som dal text, ktorý na 2-3 riadky popíše, aké má REDI možnosti vo výrobe lóg. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <a href="#logos-gallery" class="why-redi__btn">PROHLÍDNOUT 3D LOGA</a>
+      </section>
+
+      <!-- Work gallery -->
+      <section id="logos-gallery" class="gallery">
+         <div class="gallery__item gallery__item--first">
+            <img class="gallery__img" src="./gallery/gallery-logo-logo1.jpg" alt="">
+            <div class="gallery__text">
+               <h3>Nadpis</h3>
+               <p>Krátky popis práce</p>
+            </div>
+         </div>
+
+         <div class="gallery__item gallery__item--second">
+            <img class="gallery__img" src="./gallery/gallery-logo-logo2.jpg" alt="">
+            <div class="gallery__text">
+               <h3>Nadpis</h3>
+               <p>Krátky popis práce</p>
+            </div>
+         </div>
+
+         <div class="gallery__item gallery__item--third">
+            <img class="gallery__img" src="./gallery/gallery-logo-logo3.jpg" alt="">
+            <div class="gallery__text">
+               <h3>Nadpis</h3>
+               <p>Krátky popis práce</p>
+            </div>
          </div>
       </section>
    
-     <!-- Why REDI -->
-     <section class="why-redi">
-      <h2 class="section__title">Jsme tvořitelé.</h2>
-      <p class="text why-redi__text">Sem pôjde text, ktorý popíše na 2-3 riadky kto je REDI, čo robíme a prečo by si klient mal vybrať práve nás. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      <a href="#redi-services" class="why-redi__btn">Naša práca</a>
-   </section>
-
-      <section></section>
-      <!-- 3D Logo & Branding References -->
-      <!-- <section class="logos-references">
-         <div class="work-gallery">
-            <div class="work-gallery__item work-gallery--detail">
-               <h2 class="section__title">Detail výroby</h2>
-               <img src="./img/13-LP-service__loga.jpg" alt="" class="grid__item">
-            </div>
-      
-            <div class="work-gallery__item">
-               <h2 class="section__title">Reference</h2>
-               <div class="work-gallery__grid">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-                  <img src="./img/logo-test.jpeg" alt="" class="grid__item">
-               </div>
-            </div>
-         </div>
-      </section> -->
-   
       <!-- Contact form -->
-      <section class="contact-info">
+      <section class="contact-info contact-info--blue">
          <div class="contact-info__item contact-info__form">
             <form>
                <h2 class="section__title">Kontaktujte nás</h2>
@@ -145,15 +145,15 @@
 
                   <li>
                      <label class="contact-info__data" for="data">
-                        Souhlasím se <a class="contact-info__data-link" href="#">zpracováním osobních údajů</a>.
+                        Souhlasím se <a class="contact-info__data-link contact-info__data-link--blue" href="#">zpracováním osobních údajů</a>.
                         <input type="checkbox" id="data" name="user_data">
                         <span class="checkmark"></span>
                         </label>
                      <!-- <br> -->
                   </li>
                   
-                  <li class="contact-info__button">
-                     <button type="submit">Odeslat</button>
+                  <li>
+                     <button class="contact-info__button" type="submit">Odeslat</button>
                   </li>
                </ul>
             </form>

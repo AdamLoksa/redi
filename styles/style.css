@@ -115,6 +115,14 @@ p, .text {
   bottom: -0.25em;
 }
 
+.page-title--red {
+  color: #E52025;
+}
+
+.page-title--blue {
+  color: #3B82AD;
+}
+
 .contact-title {
   color: #E52025;
 }
@@ -148,6 +156,7 @@ p, .text {
 
 .redi-dot {
   color: #E52025;
+  top: 2px;
 }
 
 .redi-dot--inv {
@@ -256,7 +265,7 @@ p, .text {
   font-size: 2vh;
 }
 
-.contact-info button {
+.contact-info__button {
   text-transform: uppercase;
   font-family: HelveticaBold;
 }
@@ -266,6 +275,11 @@ p, .text {
   border-bottom: 1px solid #E52025;
   -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
+}
+
+.contact-info__data-link--blue {
+  color: #3B82AD;
+  border-bottom: 1px solid #3B82AD;
 }
 
 .footer__item + .footer__item {
@@ -382,62 +396,81 @@ p, .text {
   }
 }
 
-.logos-references {
+.gallery {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2rem;
+  display: -ms-grid;
+  display: grid;
+  gap: 1rem;
+  -ms-grid-rows: 50% 25% 25%;
+      grid-template-rows: 50% 25% 25%;
+      grid-template-areas: "img--first" "img--second" "img--third";
+}
+
+.gallery__item {
+  position: relative;
+}
+
+.gallery__text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  padding: 1rem;
+  background-color: rgba(20, 20, 20, 0.5);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  opacity: 0;
+  -webkit-transition: opacity ease-in-out 0.25s;
+  transition: opacity ease-in-out 0.25s;
 }
 
-.work-gallery {
-  height: 80%;
+.gallery__item:hover .gallery__text {
+  opacity: 1;
 }
 
-.work-gallery__item + .work-gallery__item {
-  margin-top: 2rem;
+.gallery__item--first {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img--first;
 }
 
-.work-gallery__grid {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  grid-gap: 0.5rem;
+.gallery__item--second {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img--second;
+}
+
+.gallery__item--third {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: img--third;
+}
+
+.gallery__img {
+  display: block;
+  width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media only screen and (min-width: 1100px) {
-  .work-gallery__item {
-    height: 90%;
-    max-height: 100%;
-  }
-  .work-gallery__item + .work-gallery__item {
-    margin-top: 0;
-    margin-left: 2rem;
-    text-align: right;
-  }
-  .work-gallery--detail {
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
-  }
-  .work-gallery__grid {
-    -ms-grid-columns: (1fr)[3];
-        grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1rem;
-  }
-  .work-gallery img {
-    display: block;
-    -o-object-fit: cover;
-       object-fit: cover;
-    width: 100%;
-    height: 100%;
+  .gallery {
+    -ms-grid-columns: 60% 39%;
+        grid-template-columns: 60% 39%;
+    -ms-grid-rows: 50%;
+        grid-template-rows: 50%;
+        grid-template-areas: "img--first img--second" "img--first img--third";
   }
 }
 
@@ -484,7 +517,7 @@ p, .text {
   }
 }
 
-.contact-info button {
+.contact-info__button {
   border: 0;
   margin-top: 1rem;
   padding: 0.85rem 1.5rem 0.5rem;
@@ -494,7 +527,7 @@ p, .text {
   transition: ease-in-out 0.25s;
 }
 
-.contact-info button:hover {
+.contact-info__button:hover {
   background-color: #fff;
   color: #E52025;
   cursor: pointer;
@@ -594,6 +627,27 @@ p, .text {
             align-items: center;
     height: 60vh;
   }
+}
+
+.contact-info--blue input[type=text], .contact-info--blue textarea {
+  border-bottom: solid 1px #3B82AD;
+}
+
+.contact-info--blue .contact-info__button {
+  background-color: #3B82AD;
+}
+
+.contact-info--blue .contact-info__button:hover {
+  color: #3B82AD;
+  background-color: #fff;
+}
+
+.contact-info--blue .contact-info__data:hover input ~ .checkmark {
+  background-color: #3B82AD;
+}
+
+.contact-info--blue .contact-info__data input:checked ~ .checkmark {
+  background-color: #3B82AD;
 }
 
 .contact-info--c {
