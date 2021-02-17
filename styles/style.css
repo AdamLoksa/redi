@@ -9,7 +9,7 @@
 
 body {
   background-color: #141414;
-  color: #fff;
+  color: #ffffff;
 }
 
 img {
@@ -39,6 +39,11 @@ html {
   font-weight: 600;
 }
 
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -49,21 +54,11 @@ ul {
 
 p, a, li {
   font-family: HelveticaLight, serif;
-  color: #fff;
+  color: #ffffff;
   line-height: 1.5;
 }
 
-p, .text {
-  font-size: 2vh;
-  margin-top: 1rem;
-}
-
-.text--address {
-  margin: 0;
-}
-
-.page-title,
-.contact-title {
+.page-title {
   font-family: HelveticaBold, serif;
   font-size: 6vh;
   text-transform: uppercase;
@@ -77,42 +72,6 @@ p, .text {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-bottom: 0;
-}
-
-@media only screen and (min-width: 1100px) {
-  .page-title,
-  .contact-title {
-    font-size: 8vh;
-  }
-}
-
-.page-title--intro,
-.contact-title--intro {
-  display: block;
-  text-transform: unset;
-}
-
-.page-title--intro span,
-.contact-title--intro span {
-  bottom: 0em;
-}
-
-.section__title,
-.contact-us__btn {
-  font-family: HelveticaBold;
-  font-size: 3.75vh;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.page-title {
-  margin-bottom: 1rem;
-}
-
-.page-title span {
-  position: relative;
-  bottom: -0.25em;
 }
 
 .page-title--red {
@@ -123,13 +82,32 @@ p, .text {
   color: #3B82AD;
 }
 
-.contact-title {
-  color: #E52025;
+.page-title--intro {
+  display: block;
+  text-transform: unset;
 }
 
-.section__title--lowCase {
+@media only screen and (min-width: 1100px) {
+  .page-title {
+    font-size: 9vh;
+  }
+}
+
+.section-title {
   font-family: HelveticaBold;
+  font-size: 3.4vh;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.section-title--lowCase {
   text-transform: unset;
+}
+
+@media only screen and (min-width: 1100px) {
+  .section-title {
+    font-size: 5.5vh;
+  }
 }
 
 .why-redi {
@@ -146,12 +124,17 @@ p, .text {
   text-transform: uppercase;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
 }
 
 .why-redi__btn:hover {
   color: #E52025;
   border-bottom: 1px solid #E52025;
+}
+
+.text {
+  font-size: 2vh;
+  margin-top: 1rem;
 }
 
 .redi-dot {
@@ -160,7 +143,7 @@ p, .text {
 }
 
 .redi-dot--inv {
-  color: #fff;
+  color: #ffffff;
   position: absolute;
 }
 
@@ -169,7 +152,7 @@ p, .text {
 }
 
 .wp-intro__skip__btn:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
 }
 
@@ -198,7 +181,7 @@ p, .text {
 
 @media only screen and (min-width: 1100px) {
   .nav__link {
-    font-size: 3.75vh;
+    font-size: 5.5vh;
   }
 }
 
@@ -224,7 +207,7 @@ p, .text {
 
 @media only screen and (min-width: 1100px) {
   .nav__item {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.4vh;
   }
 }
 
@@ -289,11 +272,11 @@ p, .text {
 .footer__link {
   font-family: HelveticaLight;
   font-size: 2vh;
-  color: #fff;
+  color: #ffffff;
 }
 
 .footer__link:hover {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #ffffff;
   margin-bottom: -1px;
 }
 
@@ -327,7 +310,6 @@ p, .text {
 .o-list::before {
   content: "" counter(counter) ".";
   font-family: HelveticaBold, serif;
-  font-size: 5vh;
   line-height: 1;
   margin-right: 1rem;
 }
@@ -521,14 +503,14 @@ p, .text {
   border: 0;
   margin-top: 1rem;
   padding: 0.85rem 1.5rem 0.5rem;
-  color: #fff;
+  color: #ffffff;
   background-color: #E52025;
   -webkit-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
 }
 
 .contact-info__button:hover {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #E52025;
   cursor: pointer;
 }
@@ -564,7 +546,7 @@ p, .text {
   left: 0;
   height: 15px;
   width: 15px;
-  background-color: #fff;
+  background-color: #ffffff;
   -webkit-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
 }
@@ -639,7 +621,7 @@ p, .text {
 
 .contact-info--blue .contact-info__button:hover {
   color: #3B82AD;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .contact-info--blue .contact-info__data:hover input ~ .checkmark {
@@ -651,7 +633,7 @@ p, .text {
 }
 
 .contact-info--c {
-  margin-top: 3.375rem;
+  margin-top: 7.65vh;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -659,7 +641,7 @@ p, .text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 4.5rem;
+    margin-top: 10.2vh;
     height: 40vh;
   }
 }
@@ -672,7 +654,7 @@ header {
   height: 4.5rem;
   width: 100%;
   top: 0;
-  padding: 1.5rem;
+  padding: 3.4vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,7 +696,7 @@ header {
 .nav--open {
   background-color: rgba(20, 20, 20, 0.98);
   display: block;
-  padding: 1.5rem;
+  padding: 3.4vh;
   padding-top: 10rem;
   position: fixed;
   top: 0;
@@ -804,7 +786,7 @@ header {
   position: absolute;
   height: 1px;
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -851,12 +833,7 @@ header {
   }
 }
 
-#redi-home,
-#redi-logo {
-  padding: 0;
-}
-
-.intro {
+.page-intro {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -864,20 +841,41 @@ header {
       -ms-flex-align: end;
           align-items: flex-end;
   height: 100vh;
-  padding: 1.5rem;
+  padding: 3.4vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+@media only screen and (min-width: 1100px) {
+  .page-intro {
+    padding: 3.4vh;
+  }
+}
+
 section {
   margin: 0 auto;
-  padding: 1.5rem;
+}
+
+.section-fs {
+  height: 100vh;
 }
 
 @media only screen and (min-width: 1100px) {
-  section {
-    height: 95vh;
+  .section-fs {
+    margin: 3.4vh 0;
+  }
+}
+
+.section-p {
+  padding: 0 3.4vh;
+  margin: 3.4vh 0;
+}
+
+@media only screen and (min-width: 1100px) {
+  .section-p {
+    margin: 0 auto;
+    padding: 0 3.4vh;
   }
 }
 
@@ -895,20 +893,19 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 2rem;
 }
 
 @media only screen and (min-width: 1100px) {
   .why-redi {
     width: 50%;
-    height: 52.25vh;
+    height: 55vh;
   }
 }
 
 .footer {
   width: 100%;
-  margin: 0 auto;
-  padding-bottom: 1.5rem;
+  margin: 3.4vh auto;
+  padding: 0 3.4vh;
 }
 
 .social {
@@ -1161,7 +1158,7 @@ section {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 85.5vh;
+    height: 90vh;
   }
 }
 
@@ -1179,7 +1176,7 @@ section {
   .service {
     width: 100%;
     height: 100%;
-    margin: 0 0.75rem;
+    margin: 0 1.7vh;
   }
 }
 
@@ -1232,7 +1229,7 @@ section {
 }
 
 .work-gallery {
-  margin-top: 1.5rem;
+  margin-top: 3.4vh;
 }
 
 .contact-map {
@@ -1268,7 +1265,7 @@ section {
     display: -ms-flexbox;
     display: flex;
     height: 42vh;
-    margin-top: 1.5rem;
+    margin-top: 3.4vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
