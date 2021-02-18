@@ -55,7 +55,7 @@ ul {
 p, a, li {
   font-family: HelveticaLight, serif;
   color: #ffffff;
-  line-height: 1;
+  line-height: 1.5;
 }
 
 .page-title {
@@ -125,15 +125,35 @@ p, a, li {
   }
 }
 
+.redi-claim {
+  font-family: HelveticaBold;
+  font-size: 6vh;
+  text-transform: uppercase;
+  color: #E52025;
+  margin-top: 3.4vh;
+}
+
+@media only screen and (min-width: 1100px) {
+  .redi-claim {
+    margin: 0;
+    font-size: 9vh;
+  }
+}
+
 .text {
   margin: 3.4vh 0;
-  font-size: 2vh;
+  font-size: 1.8vh;
   line-height: 1.5;
+}
+
+.text--center {
+  text-align: center;
 }
 
 @media only screen and (min-width: 1100px) {
   .text {
     margin: 3.4vh 0;
+    font-size: 2vh;
   }
 }
 
@@ -260,7 +280,7 @@ p, a, li {
 .footer__copyright {
   text-align: center;
   font-size: 1.25vh;
-  margin-top: 0.85vh;
+  margin-top: 1.7vh;
 }
 
 .btn {
@@ -390,6 +410,22 @@ p, a, li {
     -ms-grid-rows: 50%;
         grid-template-rows: 50%;
         grid-template-areas: "img--first img--second" "img--first img--third";
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .contact {
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -524,7 +560,6 @@ p, a, li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 60vh;
   }
 }
 

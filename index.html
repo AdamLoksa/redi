@@ -121,7 +121,7 @@
    <!-- Why REDI -->
    <section id="redi-about" class="why-redi section-p">
       <h2 class="section-title">Jsme tvořitelé.</h2>
-      <p class="text">Sem pôjde text, ktorý popíše na 2-3 riadky kto je REDI, čo robíme a prečo by si klient mal vybrať práve nás. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <p class="text text--center">Sem pôjde text, ktorý popíše na 2-3 riadky kto je REDI, čo robíme a prečo by si klient mal vybrať práve nás. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       <a href="#redi-services" class="btn btn--work">Naša práca</a>
    </section>
 
@@ -149,48 +149,52 @@
 
 
       <!-- Contact form -->
-      <section class="contact-info section-p">
-         <div class="contact-info__item contact-info__form">
-            <form>
-               <h2 class="section-title">Kontaktujte nás</h2>
-               <ul> 
-                  <li>
-                     <input type="text" id="name" name="user_name" aria-label="name" placeholder="jméno" title="vložte své jméno, např.: Petr Novák" patter="/^[a-zá-ž]+ +[a-zá-ž]+$/i" required>
-                  </li>
-                  
-                  <li>
-                     <input type="text" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
-                  </li>
-                  
-                  <li>
-                     <input type="text" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
-                  </li>
+      <section class="contact section-p">
+         <h2 class="section-title">Kontaktujte nás</h2>
+         <div class="contact-info">
+            <div class="contact-info__item contact-info__form">
+               <form>
+                  <ul> 
+                     <li>
+                        <input type="text" id="name" name="user_name" aria-label="name" placeholder="jméno" title="vložte své jméno, např.: Petr Novák" patter="/^[a-zá-ž]+ +[a-zá-ž]+$/i" required>
+                     </li>
                      
-                  <li>
-                     <textarea id="message" name="user_message" aria-label="message" placeholder="Popíšte nám, akú máte predstavu o spracovaní vašej zákazky. Nemusíte sa báť. Ak to zatiaľ neviete, tak Vám s tým pomôžeme."></textarea>
-                  </li>
+                     <li>
+                        <input type="text" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                     </li>
+                     
+                     <li>
+                        <input type="text" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
+                     </li>
+                        
+                     <li>
+                        <textarea id="message" name="user_message" aria-label="message" placeholder="Popíšte nám, akú máte predstavu o spracovaní vašej zákazky. Nemusíte sa báť. Ak to zatiaľ neviete, tak Vám s tým pomôžeme."></textarea>
+                     </li>
 
-                  <li>
-                     <label class="contact-info__data" for="data">
-                        Souhlasím se <a class="contact-info__data-link" href="#">zpracováním osobních údajů</a>.
-                        <input type="checkbox" id="data" name="user_data">
-                        <span class="checkmark"></span>
-                        </label>
-                  </li>
-                  
-                  <li>
-                     <button class="btn btn--form" type="submit">Odeslat</button>
-                  </li>
-               </ul>
-            </form>
-         </div>
+                     <li>
+                        <label class="contact-info__data" for="data">
+                           Souhlasím se <a class="contact-info__data-link" href="#">zpracováním osobních údajů</a>.
+                           <input type="checkbox" id="data" name="user_data">
+                           <span class="checkmark"></span>
+                           </label>
+                     </li>
+                     
+                     <li>
+                        <button class="btn btn--form" type="submit">Odeslat</button>
+                     </li>
+                  </ul>
+               </form>
+            </div>
 
-         <div class="contact-info__item contact-info__headline">
-            <h2 class="redi-claim">
-               <span>Everything</span>
-               <span>Was once</span>
-               <span>Impossible <span class="redi-dot--inv">.</span></span>
-            </h2>
+            <div class="contact-info__item contact-info__headline">
+               <h2 class="redi-claim">
+                  <span>Everything</span>
+                  <span>Was once</span>
+                  <span>Impossible<span class="redi-dot--inv">.</span></span>
+               </h2>
+               <div class="redi-slash">/</div>
+               <div class="redi-slash">/</div>
+            </div>
          </div>
       </section>
 </main>
