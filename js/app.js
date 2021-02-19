@@ -26,7 +26,7 @@ window.onscroll = function() {
 
     if (prevScrollpos > currentScrollPos) {
         document.querySelector('.menu').style.top = '0';
-        document.querySelector('.menu').style.background = 'rgba(20,20,20,0.90)';
+        document.querySelector('.menu').style.background = 'rgba(20,20,20,0.98)';
     } else {
         document.querySelector('.menu').style.top = '-5rem';
     }

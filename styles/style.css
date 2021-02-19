@@ -23,19 +23,19 @@ html {
 
 @font-face {
   font-family: HelveticaLight;
-  src: url(../fonts/HelveticaNeueLTCom-Lt.ttf);
+  src: url(../fonts/HelveticaNeue-Light.otf);
   font-weight: 100;
 }
 
 @font-face {
   font-family: HelveticaReg;
-  src: url(../fonts/HelveticaNeueLTCom-Roman.ttf);
+  src: url(../fonts/HelveticaNeue.otf);
   font-weight: 400;
 }
 
 @font-face {
   font-family: HelveticaBold;
-  src: url(../fonts/HelveticaNeueLTCom-Bd.ttf);
+  src: url(../fonts/HelveticaNeue-Bold.otf);
   font-weight: 600;
 }
 
@@ -62,6 +62,9 @@ p, a, li {
   font-family: HelveticaBold, serif;
   font-size: max(40px, 6vh);
   text-transform: uppercase;
+}
+
+.page-title--lp {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,7 +157,7 @@ p, a, li {
 @media only screen and (min-width: 1100px) {
   .text {
     font-size: max(15px, 2vh);
-    margin: 3.4vh 0;
+    margin: 6vh 0;
   }
 }
 
@@ -189,13 +192,13 @@ p, a, li {
 }
 
 .nav-toggle__text {
-  font-size: 0.85rem;
+  font-size: max(15px, 1.8vh);
   text-transform: uppercase;
 }
 
 @media only screen and (min-width: 1100px) {
   .nav-toggle__text {
-    font-size: 1rem;
+    font-size: max(15px, 2vh);
   }
 }
 
@@ -239,7 +242,7 @@ p, a, li {
 
 @media only screen and (min-width: 1100px) {
   .nav__item {
-    margin-bottom: 3.4vh;
+    margin-bottom: 4vh;
   }
 }
 
@@ -298,7 +301,7 @@ p, a, li {
 
 .footer__copyright {
   text-align: center;
-  font-size: max(10px, 1.25vh);
+  font-size: max(12px, 1.25vh);
   margin-top: 1.7vh;
 }
 
@@ -335,7 +338,7 @@ p, a, li {
 @media only screen and (min-width: 1100px) {
   .btn--form {
     font-size: 2.5vh;
-    padding: 1.13333vh 3.4vh;
+    padding: 2vh 6vh;
   }
 }
 
@@ -442,7 +445,7 @@ p, a, li {
 
 @media only screen and (min-width: 1100px) {
   .contact {
-    height: 60vh;
+    height: 80vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -457,22 +460,34 @@ p, a, li {
 }
 
 .contact-info {
+  margin-top: 3.4vh;
   /* Checkbox src - https://www.w3schools.com/tags/att_input_type_checkbox.asp */
 }
 
-.contact-info__headline {
-  margin: 0;
-}
-
 @media only screen and (min-width: 1100px) {
-  .contact-info__item {
-    width: 50%;
+  .contact-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 6vh;
   }
 }
 
 @media only screen and (min-width: 1100px) {
-  .contact-info__form {
-    padding-right: 5rem;
+  .contact-info__item {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .contact-info__headline {
+    padding-left: 5rem;
   }
 }
 
@@ -482,20 +497,20 @@ p, a, li {
   width: 100%;
   height: 35px;
   max-width: 100%;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   background-color: #141414;
 }
 
 .contact-info textarea {
   border: 0;
-  margin-top: 0.5rem;
+  margin-top: 0.25rem;
   resize: none;
-  height: 85px;
+  height: 100px;
 }
 
 @media only screen and (min-width: 1100px) {
   .contact-info textarea {
-    height: 50px;
+    height: 125px;
   }
 }
 
@@ -522,13 +537,19 @@ p, a, li {
 
 .contact-info__data .checkmark {
   position: absolute;
-  top: 3px;
+  top: 4px;
   left: 0;
   height: 15px;
   width: 15px;
   background-color: #ffffff;
   -webkit-transition: ease-in-out 0.25s;
   transition: ease-in-out 0.25s;
+}
+
+@media only screen and (min-width: 1100px) {
+  .contact-info__data .checkmark {
+    top: 6px;
+  }
 }
 
 .contact-info__data:hover input ~ .checkmark {
@@ -576,21 +597,7 @@ p, a, li {
           transform: rotate(-45deg);
 }
 
-@media only screen and (min-width: 1100px) {
-  .contact-info {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-
-.contact-info--blue input[type=text], .contact-info--blue textarea {
+.contact-info--blue input[type=text] {
   border-bottom: solid 1px #3B82AD;
 }
 
@@ -612,7 +619,7 @@ p, a, li {
 }
 
 .contact-info--c {
-  margin-top: 7.65vh;
+  margin-top: 13.5vh;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -620,7 +627,7 @@ p, a, li {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 10.2vh;
+    margin-top: 18vh;
     height: 40vh;
   }
 }
@@ -633,7 +640,7 @@ header {
   height: 4.5rem;
   width: 100%;
   top: 0;
-  padding: 3.4vh;
+  padding: 4.5vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,7 +682,7 @@ header {
 .nav--open {
   background-color: rgba(20, 20, 20, 0.98);
   display: block;
-  padding: 3.4vh;
+  padding: 6vh;
   padding-top: 10rem;
   position: fixed;
   top: 0;
@@ -751,6 +758,7 @@ header {
 
 .nav-toggle__icon {
   width: 30px;
+  top: 3px;
   position: relative;
   margin-left: 1rem;
   -webkit-transform: rotate(0deg);
@@ -828,7 +836,7 @@ header {
 
 @media only screen and (min-width: 1100px) {
   .page-intro {
-    padding: 3.4vh;
+    padding: 6vh;
   }
 }
 
@@ -842,7 +850,7 @@ section {
 
 @media only screen and (min-width: 1100px) {
   .section-fs {
-    margin: 3.4vh 0;
+    margin: 6vh 0;
   }
 }
 
@@ -854,7 +862,7 @@ section {
 @media only screen and (min-width: 1100px) {
   .section-p {
     margin: 0 auto;
-    padding: 0 3.4vh;
+    padding: 0 6vh;
   }
 }
 
@@ -872,12 +880,16 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 6vh;
+  margin-bottom: 6vh;
 }
 
 @media only screen and (min-width: 1100px) {
   .why-redi {
     width: 50%;
     height: 55vh;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -1153,9 +1165,11 @@ section {
 
 @media only screen and (min-width: 1100px) {
   .service {
-    width: 100%;
+    width: 100vw;
     height: 100%;
-    margin: 0 1.7vh;
+  }
+  .service + .service {
+    margin-left: 6vh;
   }
 }
 
@@ -1164,6 +1178,9 @@ section {
   width: 100%;
   height: 100%;
   z-index: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .service__hover {
@@ -1208,12 +1225,12 @@ section {
 }
 
 .work-gallery {
-  margin-top: 3.4vh;
+  margin-top: 6vh;
 }
 
 .contact-map {
   width: 100%;
-  padding-top: 3.4vh;
+  padding-top: 6vh;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1223,7 +1240,7 @@ section {
 }
 
 .contact-map__item + .contact-map__item {
-  margin-top: 3.4vh;
+  margin-top: 6vh;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1238,7 +1255,7 @@ section {
     display: -ms-flexbox;
     display: flex;
     height: 42vh;
-    margin-top: 3.4vh;
+    margin-top: 6vh;
   }
 }
 /*# sourceMappingURL=style.css.map */
