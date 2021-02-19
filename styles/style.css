@@ -60,7 +60,7 @@ p, a, li {
 
 .page-title {
   font-family: HelveticaBold, serif;
-  font-size: 6vh;
+  font-size: max(40px, 6vh);
   text-transform: uppercase;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -95,7 +95,7 @@ p, a, li {
 
 .section-title {
   font-family: HelveticaBold;
-  font-size: 3.4vh;
+  font-size: max(25px, 3.4vh);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -113,7 +113,7 @@ p, a, li {
 .service-title {
   padding: 1.7vh;
   font-family: HelveticaReg;
-  font-size: 2.8vh;
+  font-size: max(20px, 2.8vh);
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 5;
@@ -127,7 +127,7 @@ p, a, li {
 
 .redi-claim {
   font-family: HelveticaBold;
-  font-size: 6vh;
+  font-size: max(40px, 6vh);
   text-transform: uppercase;
   color: #E52025;
   margin-top: 3.4vh;
@@ -141,9 +141,10 @@ p, a, li {
 }
 
 .text {
-  margin: 3.4vh 0;
-  font-size: 1.8vh;
+  font-family: HelveticaLight;
+  font-size: max(15px, 1.8vh);
   line-height: 1.5;
+  margin: 3.4vh 0;
 }
 
 .text--center {
@@ -152,8 +153,18 @@ p, a, li {
 
 @media only screen and (min-width: 1100px) {
   .text {
+    font-size: max(15px, 2vh);
     margin: 3.4vh 0;
-    font-size: 2vh;
+  }
+}
+
+.text--address {
+  margin: 0;
+}
+
+@media only screen and (min-width: 1100px) {
+  .text--address {
+    margin: 0;
   }
 }
 
@@ -165,6 +176,16 @@ p, a, li {
 
 .redi-dot--inv {
   color: #ffffff;
+}
+
+.redi-slash {
+  color: #E52025;
+  font-family: HelveticaReg;
+  font-size: max(25px, 3.4vh);
+}
+
+.redi-slash--blue {
+  color: #3B82AD;
 }
 
 .nav-toggle__text {
@@ -201,7 +222,7 @@ p, a, li {
 }
 
 .nav__link--social {
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
   margin-bottom: 5rem;
   padding: 0;
 }
@@ -230,32 +251,30 @@ p, a, li {
 .contact-info input[type=text]::-webkit-input-placeholder, .contact-info textarea::-webkit-input-placeholder {
   color: #adadad;
   font-family: HelveticaLight;
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
 }
 
 .contact-info input[type=text]:-ms-input-placeholder, .contact-info textarea:-ms-input-placeholder {
   color: #adadad;
   font-family: HelveticaLight;
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
 }
 
 .contact-info input[type=text]::-ms-input-placeholder, .contact-info textarea::-ms-input-placeholder {
   color: #adadad;
   font-family: HelveticaLight;
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
 }
 
 .contact-info input[type=text]::placeholder, .contact-info textarea::placeholder {
   color: #adadad;
   font-family: HelveticaLight;
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
 }
 
 .contact-info__data-link {
   color: #E52025;
   border-bottom: 1px solid #E52025;
-  -webkit-transition: opacity 0.25s;
-  transition: opacity 0.25s;
 }
 
 .contact-info__data-link--blue {
@@ -269,7 +288,7 @@ p, a, li {
 
 .footer__link {
   font-family: HelveticaLight;
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
 }
 
 .footer__link:hover {
@@ -279,13 +298,13 @@ p, a, li {
 
 .footer__copyright {
   text-align: center;
-  font-size: 1.25vh;
+  font-size: max(10px, 1.25vh);
   margin-top: 1.7vh;
 }
 
 .btn {
   font-family: HelveticaBold;
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
   text-transform: uppercase;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
@@ -318,6 +337,14 @@ p, a, li {
     font-size: 2.5vh;
     padding: 1.13333vh 3.4vh;
   }
+}
+
+.btn--blue {
+  background-color: #3B82AD;
+}
+
+.btn--blue:hover {
+  color: #3B82AD;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -482,7 +509,7 @@ p, a, li {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  font-size: 2vh;
+  font-size: max(15px, 2vh);
 }
 
 .contact-info__data input {
@@ -1186,7 +1213,7 @@ section {
 
 .contact-map {
   width: 100%;
-  padding-top: 0;
+  padding-top: 3.4vh;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -1195,14 +1222,8 @@ section {
   }
 }
 
-@media only screen and (min-width: 1100px) {
-  .contact-map__google {
-    padding-right: 5rem;
-  }
-}
-
 .contact-map__item + .contact-map__item {
-  margin-top: 3rem;
+  margin-top: 3.4vh;
 }
 
 @media only screen and (min-width: 1100px) {
