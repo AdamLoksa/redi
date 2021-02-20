@@ -70,7 +70,6 @@ const ctrLocalStorage = (function() {
     }
 
     // Clear data
-
     return {
         save: saveData,
         load: loadData
@@ -82,3 +81,4 @@ if (ctrLocalStorage.load() != 'true') {
     ctrLocalStorage.save();
 }
 
+// websiteIntro.init();
