@@ -76,9 +76,9 @@ const ctrLocalStorage = (function() {
     };
 })();
 
-if (ctrLocalStorage.load() != 'true') {
-    websiteIntro.init();
-    ctrLocalStorage.save();
-}
+// if (ctrLocalStorage.load() != 'true') {
+//     websiteIntro.init();
+//     ctrLocalStorage.save();
+// }
 
-// websiteIntro.init();
+websiteIntro.init();
