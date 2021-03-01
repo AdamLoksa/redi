@@ -107,6 +107,10 @@ p, a, li {
   text-transform: unset;
 }
 
+.section-title--center, .description-title--center {
+  text-align: center;
+}
+
 @media only screen and (min-width: 1100px) {
   .section-title, .description-title {
     font-size: 5.5vh;
@@ -987,7 +991,7 @@ section {
     margin: 0 12vh;
   }
   .description__item--first {
-    width: 40%;
+    width: 70%;
     margin-right: 12vh;
   }
 }
