@@ -35,4 +35,4 @@ window.onscroll = function() {
 
 const vh = window.innerHeight * 0.01;
 const pageIntro = document.querySelector('.page-intro');
-pageIntro.style.setProperty('height', `calc(var(${vh}px, 1vh) * 100);`);
+pageIntro.style.setProperty('height', `calc(${vh}px) * 100);`);
