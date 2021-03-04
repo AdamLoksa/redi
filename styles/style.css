@@ -862,7 +862,7 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  height: 90vh;
+  min-height: 100vh;
   padding: 3.4vh;
   background-position: center;
   background-repeat: no-repeat;
