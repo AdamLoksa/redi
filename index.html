@@ -6,6 +6,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>REDI Industries</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
    <!-- Favicon -->
    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -16,13 +17,12 @@
    
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
    <link rel="stylesheet" href="styles/style.css">
 </head> 
 <body>
    <!-- Video animation intro -->
    <section scroll="no" class="wp-intro">
-      <video playsinline autoplay muted poster="./video/redi-intro.jpg" class="wp-intro__video" id="bgvid">
+      <video playsinline autoplay muted class="wp-intro__video" id="bgvid">
          <source src="./video/redi-intro.mp4" type="video/mp4">
          <source src="./video/redi-intro.webm" type="video/webm">
       </video>
@@ -108,8 +108,18 @@
 
    <main>
       <!-- Introduction -->
-      <section id="redi-home">
-         <div class="page-intro landingPage-bg">
+      <section id="redi-home" class="picture__container">
+         <picture>
+            <source media="(min-width: 1100px)"
+                    srcset="/img/11-LP-intro__BG-hor-1000.jpg 1500w,
+                            /img/11-LP-intro__BG-hor-1500.jpg 2000w">
+            <source srcset="/img/11-LP-intro__BG-ver-500.jpg 500w,
+                            /img/11-LP-intro__BG-ver-1000.jpg 1000w,
+                            /img/11-LP-intro__BG-ver-1500.jpg 1500w">
+            <img class="picture__img" src="/img/11-LP-intro__BG-hor-1500.jpg" alt="">
+         </picture>
+
+         <div class="page-intro">
             <h1 class="page-title page-title--lp">
                <div>Research</div> 
                <div>Division</div> 
@@ -131,19 +141,49 @@
       <!-- REDI Services -->
       <section id="redi-services" class="services section-p">
          <a href="./logos.html" class="service">
-            <div class="service__img service__logo"></div>
+            <!-- <div class="service__img service__logo"></div> -->
+            <picture>
+               <source media="(min-width: 1100px)"
+                       srcset="/img/13-LP-service__loga-ver-1000.jpg 1000w,
+                               /img/13-LP-service__loga-ver-1500.jpg 1500w">
+               <source srcset="/img/13-LP-service__loga-hor-500.jpg 500w,
+                               /img/13-LP-service__loga-hor-1000.jpg 1000w,
+                               /img/13-LP-service__loga-hor-1500.jpg 1500w">
+               <img class="picture__img  service__img" src="/img/13-LP-service__loga-ver-1000.jpg .jpg" alt="">
+            </picture>
+            
             <div class="service__hover"></div>
             <h3 class="service-title">3D loga & branding</h3>
          </a>
 
          <a href="#" class="service">
-            <div class="service__img service__manufacturing"></div>
+            <!-- <div class="service__img service__manufacturing"></div> -->
+            <picture>
+               <source media="(min-width: 1100px)"
+                       srcset="/img/14-LP-service__vyroba-ver-1000.jpg 1000w,
+                               /img/14-LP-service__vyroba-ver-1500.jpg 1500w">
+               <source srcset="/img/14-LP-service__vyroba-hor-500.jpg 500w,
+                               /img/14-LP-service__vyroba-hor-1000.jpg 1000w,
+                               /img/14-LP-service__vyroba-hor-1500.jpg 1500w">
+               <img class="picture__img service__img" src="/img/14-LP-service__vyroba-ver-1000.jpg .jpg" alt="">
+            </picture>
+
             <div class="service__hover"></div>
             <h3 class="service-title">Zákazková výroba</h3>
          </a>
 
          <a href="#" class="service">
-            <div class="service__img service__prototypes"></div>
+            <!-- <div class="service__img service__prototypes"></div> -->
+            <picture>
+               <source media="(min-width: 1100px)"
+                       srcset="/img/15-LP-service__prototyp-ver-1000.jpg 1000w,
+                               /img/15-LP-service__prototyp-ver-1500.jpg 1500w">
+               <source srcset="/img/15-LP-service__prototyp-hor-500.jpg 500w,
+                               /img/15-LP-service__prototyp-hor-1000.jpg 1000w,
+                               /img/15-LP-service__prototyp-hor-1500.jpg 1500w">
+               <img class="picture__img service__img" src="/img/15-LP-service__prototyp-ver-1000.jpg .jpg" alt="">
+            </picture>
+
             <div class="service__hover"></div>
             <h3 class="service-title">Prototypová výroba</h3>
          </a>

@@ -64,6 +64,11 @@ p, a, li {
   text-transform: uppercase;
 }
 
+.page-title--intro {
+  display: block;
+  text-transform: unset;
+}
+
 .page-title--lp {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -83,11 +88,6 @@ p, a, li {
 
 .page-title--blue {
   color: #3B82AD;
-}
-
-.page-title--intro {
-  display: block;
-  text-transform: unset;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -118,7 +118,7 @@ p, a, li {
 }
 
 .service-title {
-  padding: 3.4vh;
+  padding: 1.7vh;
   font-family: HelveticaReg;
   font-size: max(20px, 2.8vh);
   text-transform: uppercase;
@@ -901,6 +901,20 @@ section {
   }
 }
 
+.picture__container {
+  position: relative;
+}
+
+.picture__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
 .why-redi {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1251,11 +1265,6 @@ section {
           animation-iteration-count: 4;
 }
 
-.landingPage-bg {
-  background-image: url(../img/11-LP-intro__BG.jpg);
-  background-position: center;
-}
-
 .services {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1350,10 +1359,6 @@ section {
 
 .service__prototypes {
   background-image: url(../img/15-LP-service__prototyp.jpg);
-}
-
-.logo--bg {
-  background-image: url(../img/21-Logos-Intro__BG.jpg);
 }
 
 .work-gallery {
