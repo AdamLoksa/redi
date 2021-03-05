@@ -41,3 +41,8 @@ const pageIntro = document.querySelector('.page-intro');
 if (pageIntro) {
     pageIntro.style.setProperty('height', `${vh}px`);
 }
+
+window.addEventListener('resize', () => {
+    let vh = window.innerHeight;
+    pageIntro.style.setProperty('height', `${vh}px`);
+  });
