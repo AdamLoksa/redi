@@ -33,6 +33,11 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 }
 
+
+// Mobile full height
 const vh = window.innerHeight;
 const pageIntro = document.querySelector('.page-intro');
-pageIntro.style.setProperty('height', `${vh}px`);
+
+if (pageIntro) {
+    pageIntro.style.setProperty('height', `${vh}px`);
+}
