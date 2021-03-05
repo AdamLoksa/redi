@@ -33,6 +33,6 @@ window.onscroll = function() {
     prevScrollpos = currentScrollPos;
 }
 
-const vh = window.innerHeight * 0.01;
+const vh = window.innerHeight;
 const pageIntro = document.querySelector('.page-intro');
-pageIntro.style.setProperty('height', `calc(${vh}px) * 100);`);
+pageIntro.style.setProperty('height', `${vh}px`);
