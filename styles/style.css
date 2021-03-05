@@ -232,12 +232,18 @@ p, a, li {
 .description ol li {
   counter-increment: my-awesome-counter;
   position: relative;
-  padding-left: 1.7vh;
+  padding-left: 20px;
+}
+
+@media only screen and (min-width: 400px) {
+  .description ol li {
+    padding-left: 10px;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
   .description ol li {
-    padding-left: 3vh;
+    padding-left: 37.5px;
   }
 }
 
@@ -956,7 +962,7 @@ header {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  min-height: 90vh;
+  min-height: 95vh;
   padding: 3.4vh;
   background-position: center;
   background-repeat: no-repeat;
@@ -966,7 +972,6 @@ header {
 @media only screen and (min-width: 1100px) {
   .page-intro {
     padding: 6vh;
-    height: 100vh;
   }
 }
 
@@ -1387,6 +1392,12 @@ section {
 @media only screen and (min-width: 1100px) {
   .contact-map__item {
     width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .contact-map__google {
+    padding-right: 5rem;
   }
 }
 
