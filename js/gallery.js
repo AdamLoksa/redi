@@ -65,5 +65,3 @@ const gallery = (function() {
       items.forEach(element => element.style = "opacity: 1;");
    }
 })();
-
-console.log(document.querySelector('[data-gallery="firstImage"]'));

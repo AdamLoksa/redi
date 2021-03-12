@@ -20,67 +20,67 @@
    <link rel="stylesheet" href="styles/style.css">
 </head> 
 <body>
+  <!-- Navbar -->
+  <header>
+   <div class="menu">
+      <a href="./index.html" class="nav__logo"><img src="./logo/logo.png" alt=""></a>
 
-   <!-- Navbar -->
-   <header>
-      <div class="menu">
-         <a href="./index.html" class="nav__logo"><img src="./logo/logo.png" alt=""></a>
-
-         <a class="nav-toggle" href="#">
-            <div class="nav-toggle__text">Menu</div>
-            <div class="nav-toggle__icon">
-               <span></span>
-               <span></span>
-               <span></span>
-               <span></span>
-            </div>
-         </a>
-      </div>
-
-      <nav class="nav">
-         <div class="nav-content">
-            <ul class="nav__list">
-               <li class="nav__item">
-                  <a class="nav__link" href="./logos.html">3D loga & Branding</a>
-               </li>
-
-               <li class="nav__item">
-                  <a href="./index.html" class="nav__link">Zákazková výroba</a>
-               </li>
-
-               <li class="nav__item">
-                  <a href="./index.html" class="nav__link">Prototypová výroba</a>
-               </li>
-            </ul>
-
-            <ul class="nav__list">
-               <li class="nav__item">
-                  <a href="./index.html" class="nav__link">Homepage</a>
-               </li>
-
-               <li class="nav__item">
-                  <a href="./contact.html" class="nav__link">Kontakt</a>
-               </li>
-
-               <li class="nav__item--social">
-                  <a href="#" class="nav__link nav__link--social">Facebook</a>
-               </li>
-
-               <li>
-                  <a href="#" class="nav__link nav__link--social">Instagram</a>
-               </li>
-
-               <li>
-                  <a href="#" class="nav__link nav__link--social ">YouTube</a>
-               </li>
-            </ul>
+      <a class="nav-toggle" href="#">
+         <div class="nav-toggle__text">Menu</div>
+         <div class="nav-toggle__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
          </div>
-      </nav>
-   </header>
+      </a>
+   </div>
+
+   <nav class="nav">
+      <div class="nav-content">
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a class="nav__link" href="./logos.html">3D loga & Branding</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./manufacturing.html" class="nav__link">Zákazková výroba</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./prototypes.html" class="nav__link">Prototypová výroba</a>
+            </li>
+         </ul>
+
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a href="./index.html" class="nav__link">Homepage</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./contact.html" class="nav__link">Kontakt</a>
+            </li>
+
+            <li class="nav__item--social">
+               <a href="#" class="nav__link nav__link--social">Facebook</a>
+            </li>
+
+            <li>
+               <a href="#" class="nav__link nav__link--social">Instagram</a>
+            </li>
+
+            <li>
+               <a href="#" class="nav__link nav__link--social ">YouTube</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+  </header>
+
 
    <main>
       <!-- Introduction -->
-      <section id="redi-logo" class="picture__container">
+      <section id="redi-logo" class="page-intro">
          <picture>
             <source media="(min-width: 1100px)"
                     srcset="./img/21-Logos-Intro__BG-1500.jpg 1500w,
@@ -91,40 +91,54 @@
             <img class="picture__img" src="./img/21-Logos-Intro__BG-1500.jpg" alt="" loading="lazy">
          </picture>
 
-         <div class="page-intro logo--bg">
+         <div class="menu menu--intro">
+            <a href="./index.html" class="nav__logo"><img src="./logo/logo.png" alt=""></a>
+   
+            <a class="nav-toggle" href="#">
+               <div class="nav-toggle__text">Menu</div>
+               <div class="nav-toggle__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </a>
+         </div>
+
+         <div class="page-intro__text">
             <h1 class="page-title">
                <span><span class="page-title--red">3D loga</span><span> & </span><span class="page-title--blue">branding</span></span>
             </h1>
          </div>
       </section>
       
-      <!-- Why REDI -->
-      <section class="service-description section-p">
-         <div class="description">
-            <div class="description__item description__item--first">
-               <h2 class="description-title">3D loga</h2>
-               <p class="text text--margin-none">Vyrábíme prostorová loga a nápisy do interiérů a exteriérů s možností podsvícení. Pro výrobu používáme tvrzený polystyren, PVC, plexisklo, dřevo, kovy, speciální materiály a jejich kombinace.
+      <!-- Logos description -->
+      <section class="text-column">
+         <div class="text-column__container">
+            <div class="text-column__item text-column__item--first">
+               <h2 class="section-title">3D loga</h2>
+               <p class="text">Vyrábíme prostorová loga a nápisy do interiérů a exteriérů s možností podsvícení. Pro výrobu používáme tvrzený polystyren, PVC, plexisklo, dřevo, kovy, speciální materiály a jejich kombinace.
                </p>
 
-               <p class="text text--margin-none">Doba výroby a cena se odvíjí od grafického zpracování podkladů, zvoleného materiálu, velikosti a povrchových úprav (broušení, leštění, lakování, množství barev apod.).
+               <p class="text">Doba výroby a cena se odvíjí od grafického zpracování podkladů, zvoleného materiálu, velikosti a povrchových úprav (broušení, leštění, lakování, množství barev apod.).
                </p>
             </div>
    
-            <div class="description__item">
-               <h2 class="description-title">Průbeh výroby</h2>
-               <ol class="description__ol">
-                  <li class="text text--margin-none">Zjistíme, co potřebujete a navrhneme možnosti realizace.</li>
+            <div class="text-column__item">
+               <h2 class="section-title">Průběh výroby</h2>
+               <ol class="o-list">
+                  <li class="o-list__text">Zjistíme, co potřebujete a navrhneme možnosti realizace.</li>
 
-                  <li class="text text--margin-none">Na vybraný způsob realizace uděláme kalkulaci konečné ceny a předpoklad doby výroby.</li>
+                  <li class="o-list__text">Na vybraný způsob realizace uděláme kalkulaci konečné ceny a předpoklad doby výroby.</li>
 
-                  <li class="text text--margin-none">Potvrdíte objednávku, zaplatíte zálohu a dostanete termín dodání.</li>
+                  <li class="o-list__text">Potvrdíte objednávku, zaplatíte zálohu a dostanete termín dodání.</li>
                </ol>
             </div>
          </div>
       </section>
 
-      <!-- Work gallery -->
-      <section id="logos-gallery" class="gallery-container section-p">
+      <!-- Work gallery logos -->
+      <section id="logos-gallery" class="gallery-container">
          <div class="gallery__btns">
             <div class="gallery__btn gallery__btn--left">
                <svg class="gallery__btn-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.24 82.53"><defs></defs><polyline class="cls-1" points="71.94 8.52 19 41.02 71.94 74.04"/></svg>
@@ -147,68 +161,130 @@
             <div class="gallery__item gallery__item--third">
                <img class="gallery__img" data-gallery="thirdImage" src="./gallery/gallery-logo-logo13.jpg" alt="">
                <div class="gallery__text">
-                  <h3 class="gallery-description" data-gallery="headline">Nadpis</h3>
-                  <p class="text text--margin-none" data-gallery="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores.</p>
+                  <h3 class="gallery-title" data-gallery="headline">Nadpis</h3>
+                  <p class="text text--gallery" data-gallery="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="text-row">
+         <h2 class="section-title">Branding</h2>
+         <p class="text">Pokud máte v plánu svou firmu zviditelnit efektivněji, máme pro Vás tyto možnosti:
+         </p>
+
+         <ul class="u-list u-list--row">
+            <li class="u-list__item u-list__item--row">
+               <span class="u-list__slash">/</span>
+               <p class="u-list__text">Gravírovaní a řezání - plexisklo, dřevo, sklo, kůže, vybrané druhy kovů, kulaté předměty
+               </p>
+            </li>
+
+            <li class="u-list__item u-list__item--row">
+               <span class="u-list__slash">/</span>
+               <p class="u-list__text">Zprostředkujeme i tiskoviny - bannery, samolepky, cedule apod.
+               </p>
+            </li>
+
+            <li class="u-list__item u-list__item--row">
+               <span class="u-list__slash">/</span>
+               <p class="u-list__text">Veletržní stánky navržené a postavené na míru Vaší značce</p>
+            </li>
+         </ul>
+      </section>
+
+      <!-- Work gallery branding -->
+      <section id="brainding-gallery" class="gallery-container">
+         <div class="gallery">
+            <div class="gallery__item gallery__item--first">
+               <img class="gallery__img" src="./gallery/gallery-logo-logo11.jpg" alt="">
+            </div>
+   
+            <div class="gallery__item gallery__item--second">
+               <img class="gallery__img" src="./gallery/gallery-logo-logo12.jpg" alt="">
+            </div>
+   
+            <div class="gallery__item gallery__item--third">
+               <img class="gallery__img" data-gallery="thirdImage" src="./gallery/gallery-logo-logo13.jpg" alt="">
+               <div class="gallery__text">
+                  <h3 class="gallery-title">Nadpis</h3>
+                  <p class="text text--gallery">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores.</p>
                </div>
             </div>
          </div>
       </section>
    
-       <!-- Contact form -->
-       <section class="contact section-p">
+
+      <!-- Contact form -->
+      <section class="form-container">
          <h2 class="section-title">Kontaktujte nás</h2>
-         <div class="contact-info contact-info--blue">
-            <div class="contact-info__item contact-info__form">
+         <div class="form">
+            <div class="form__item">
                <form>
                   <ul> 
                      <li>
-                        <input type="text" id="name" name="user_name" aria-label="name" placeholder="jméno" title="vložte své jméno, např.: Petr Novák" patter="/^[a-zá-ž]+ +[a-zá-ž]+$/i" required>
+                        <input class="form__input form__input--blue" type="text" id="name" name="user_name" aria-label="name" placeholder="jméno" title="vložte své jméno, např.: Petr Novák" required pattern="[ ./a-zA-ZáčďéěíňóřšťůúýžÁČĎÉĚÍŇÓŘŠŤŮÚÝŽ-]+[ \-]?">
                      </li>
                      
                      <li>
-                        <input type="text" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        <input class="form__input form__input--blue" type="text" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                      </li>
                      
                      <li>
-                        <input type="text" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
+                        <input class="form__input form__input--blue" type="text" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
                      </li>
                         
                      <li>
-                        <textarea id="message" name="user_message" aria-label="message" placeholder="Přiložte Vaše logo nebo grafiku ve formátu .pdf/.ai/.cdr (křivková data), který je potřebný pro výrobu."></textarea>
+                        <textarea class="form__textarea" id="message" name="user_message" aria-label="message" placeholder="Pokud už představu máte, připojte její náčrt nebo výkres. Pokud ji nemáte, se vším Vám pomůžeme. Stačí napsat, co byste chtěli vyrobit."></textarea>
+                     </li>
+
+                     <li class="form__file">
+                        <label for="files" class="form__file-attach form__file-attach--blue"><span>+</span> <span>připojit skicu</span></label>
+                        <input id="files" class="form__file-input" type="file">
                      </li>
 
                      <li>
-                        <label class="contact-info__data" for="data">
-                           Souhlasím se <a class="contact-info__data-link--blue" href="#">zpracováním osobních údajů</a>.
-                           <input type="checkbox" id="data" name="user_data">
-                           <span class="checkmark"></span>
-                           </label>
+                        <label class="form__data form__data--blue" for="data">
+                           <span class="form__data-text">Souhlasím se</span>
+                           <input class="form__checkbox form__checkbox--blue" type="checkbox" id="data" name="user_data">
+                           <span class="form__checkmark"></span><a class="form__data-link form__data-link--blue" href="#">zpracováním osobních údajů</a>.
+                        </label>
                      </li>
                      
                      <li>
-                        <button class="btn btn--form btn--blue" type="submit">Odeslat</button>
+                        <button class="btn btn-form btn--blue" type="submit">Odeslat</button>
                      </li>
                   </ul>
                </form>
             </div>
 
-            <div class="contact-info__item contact-info__headline">
+            <div class="form__item form__headline">
                <h2 class="redi-claim">
                   <div>Everything</div>
                   <div>Was Once</div>
                   <div>Impossible<span class="redi-dot--inv">.</span></div>
                </h2>
-               <p class="text text--address"><span class="redi-slash">/ </span>redi@redi.industries</p>
-               <p class="text text--address"><span class="redi-slash">/ </span>+420 604 726 152</p>
+
+               <ul class="u-list">
+                  <li class="u-list__item">
+                     <span class="u-list__slash u-list__slash--blue">/</span>
+                     <p class="u-list__text">redi@redi.industries</p>
+                  </li>
+
+                  <li class="u-list__item">
+                     <span class="u-list__slash u-list__slash--blue">/</span>
+                     <p class="u-list__text">+420 604 726 152</p>
+                  </li>
+               </ul>
             </div>
          </div>
       </section>
    </main>
    
-   
+
    <!-- Footer -->
    <footer class="footer">
-      <ul class="social">
+      <ul class="footer__social">
          <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
          <li class="footer__item"><a href="#" class="footer__link">Instagram</a></li>
          <li class="footer__item"><a href="#" class="footer__link">YouTube</a></li>
@@ -216,7 +292,6 @@
 
       <p class="footer__copyright">© 2021 Research Division Industries</p>
    </footer>
-
 
 
    <script type="text/javascript" src="js/app.js"></script>

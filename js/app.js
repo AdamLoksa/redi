@@ -1,21 +1,22 @@
-// Menu component
-const navBtn = document.querySelector('.nav-toggle');
+// Toggle menu
+const navBtn = Array.from(document.querySelectorAll('.nav-toggle'));
+navBtn.forEach(ele => ele.addEventListener('click', (event) => { toggleMenu(event) }))
 
-navBtn.addEventListener('click', (event) => {
+function toggleMenu(event) {
     event.preventDefault();
 
-    const navIcon = document.querySelector('.nav-toggle__icon');
+    const navIcon = Array.from(document.querySelectorAll('.nav-toggle__icon'));
     const navigation = document.querySelector('.nav');
     const bodyElement = document.querySelector('body');
 
     navigation.classList.toggle('nav--open');
-    navIcon.classList.toggle('nav-toggle--open');
+    navIcon.forEach(ele => ele.classList.toggle('nav-toggle--open'));
 
     setTimeout(function() {
         bodyElement.classList.toggle('stop-scrolling');
         navigation.classList.toggle('nav--opacity');
     }, 100);
-});
+}
 
 
 // Menu scroll
@@ -23,26 +24,46 @@ let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
+    const menu = document.querySelector('.menu');
+    const introBreakPoint = window.innerHeight * 0.5;
 
-    if (prevScrollpos > currentScrollPos) {
-        document.querySelector('.menu').style.top = '0';
-        document.querySelector('.menu').style.background = 'rgba(20,20,20,0.98)';
+    if (prevScrollpos > currentScrollPos & currentScrollPos > introBreakPoint) {
+        menu.style.opacity = '1';
+        menu.style.top = '0';
+        menu.style.background = 'rgba(20,20,20,0.98)';
+    } else if (currentScrollPos < introBreakPoint * 0.25) {
+        menu.style.opacity = '0';
     } else {
-        document.querySelector('.menu').style.top = '-5rem';
+        menu.style.top = '-5rem';
     }
     prevScrollpos = currentScrollPos;
 }
 
 
 // Mobile full height
-const vh = window.innerHeight;
+const wh = window.innerHeight;
 const pageIntro = document.querySelector('.page-intro');
 
 if (pageIntro) {
-    pageIntro.style.setProperty('height', `${vh}px`);
+    pageIntro.style.setProperty('height', `${wh}px`);
 }
 
 window.addEventListener('resize', () => {
-    let vh = window.innerHeight;
-    pageIntro.style.setProperty('height', `${vh}px`);
-  });
+    let wh = window.innerHeight;
+
+    if (pageIntro) {
+        pageIntro.style.setProperty('height', `${wh}px`);
+    }
+});
+
+
+// Form file attach
+const formInput = document.querySelector('.form__file');
+
+formInput.addEventListener('change', (event) => {
+    const inputName = document.querySelector('.form__file-input').value;
+
+    if (inputName) {
+        document.querySelector('.form__file-attach').innerHTML = inputName.split("\\").pop();
+    }
+})
