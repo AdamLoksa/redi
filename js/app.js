@@ -43,6 +43,7 @@ window.onscroll = function() {
 // Mobile full height
 const wh = window.innerHeight;
 const pageIntro = document.querySelector('.page-intro');
+let firstVisit = 'false';
 
 if (pageIntro) {
     pageIntro.style.setProperty('height', `${wh}px`);
@@ -51,7 +52,8 @@ if (pageIntro) {
 window.addEventListener('resize', () => {
     let wh = window.innerHeight;
 
-    if (pageIntro) {
+    if (pageIntro & !firstVisit) {
+        firstVisit = 'true';
         pageIntro.style.setProperty('height', `${wh}px`);
     }
 });
