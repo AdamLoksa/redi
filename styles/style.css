@@ -1469,7 +1469,7 @@ section {
 
 .stop-scrolling {
   height: 100vh;
-  overflow-y: hidden;
+  overflow-y: scroll;
   margin-left: calc(100vw - 100%);
 }
 
