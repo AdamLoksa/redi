@@ -8,12 +8,13 @@ function toggleMenu(event) {
     const navIcon = Array.from(document.querySelectorAll('.nav-toggle__icon'));
     const navigation = document.querySelector('.nav');
     const bodyElement = document.querySelector('body');
+    const htmlElement = document.querySelector('html');
 
     navigation.classList.toggle('nav--open');
     navIcon.forEach(ele => ele.classList.toggle('nav-toggle--open'));
 
     setTimeout(function() {
-        document.querySelector('html').classList.toggle('stop-scrolling');
+        htmlElement.classList.toggle('stop-scrolling');
         navigation.classList.toggle('nav--opacity');
     }, 100);
 }

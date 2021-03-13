@@ -10,6 +10,7 @@
 body {
   background-color: #141414;
   color: #ffffff;
+  overflow-y: scroll;
 }
 
 img {
