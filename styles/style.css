@@ -1470,6 +1470,7 @@ section {
 .stop-scrolling {
   height: 100vh;
   overflow-y: hidden;
+  margin-left: calc(100vw - 100%);
 }
 
 .wp-intro--fade {
