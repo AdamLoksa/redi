@@ -13,7 +13,7 @@ function toggleMenu(event) {
     navIcon.forEach(ele => ele.classList.toggle('nav-toggle--open'));
 
     setTimeout(function() {
-        bodyElement.classList.toggle('stop-scrolling');
+        document.querySelector('html').classList.toggle('stop-scrolling');
         navigation.classList.toggle('nav--opacity');
     }, 100);
 }
