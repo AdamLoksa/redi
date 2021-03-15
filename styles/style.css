@@ -55,14 +55,14 @@ ul {
 
 p, a, li {
   font-family: HelveticaLight, serif;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   color: #ffffff;
   line-height: 1.5;
 }
 
 @media only screen and (min-width: 1100px) {
   p, a, li {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
 }
 
@@ -106,7 +106,7 @@ p, a, li {
 
 .section-title {
   font-family: HelveticaBold;
-  font-size: max(27.5px, 3.4vh);
+  font-size: max(29.5px, 3.4vh);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
@@ -128,7 +128,7 @@ p, a, li {
 .services-title {
   margin: 1.7vh;
   font-family: HelveticaReg;
-  font-size: max(20px, 2.8vh);
+  font-size: max(24px, 3vh);
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 5;
@@ -142,7 +142,7 @@ p, a, li {
 
 .gallery-title {
   font-family: HelveticaBold;
-  font-size: max(20px, 2.8vh);
+  font-size: max(24px, 3vh);
   text-transform: uppercase;
   letter-spacing: 1px;
   z-index: 5;
@@ -172,13 +172,13 @@ p, a, li {
 .text {
   margin-top: 3.4vh;
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   line-height: 1.5;
 }
 
 @media only screen and (min-width: 1100px) {
   .text {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
     margin-top: 6vh;
   }
 }
@@ -234,7 +234,7 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: #adadad;
   box-shadow: 0 0 0px 1000px #141414 inset;
   -webkit-box-shadow: 0 0 0px 1000px #141414 inset;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
 }
 
 @media only screen and (min-width: 1100px) {
@@ -247,7 +247,7 @@ select:-webkit-autofill:focus {
   select:-webkit-autofill,
   select:-webkit-autofill:hover,
   select:-webkit-autofill:focus {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
 }
 
@@ -256,60 +256,60 @@ select:-webkit-autofill:focus {
   margin-top: 0.425vh;
   color: #adadad;
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
 }
 
 @media only screen and (min-width: 1100px) {
   .form__input, .form__textarea,
   .form input, .form textarea {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
 }
 
 .form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder,
 .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   color: #adadad;
 }
 
 .form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder,
 .form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   color: #adadad;
 }
 
 .form__input::-ms-input-placeholder, .form__textarea::-ms-input-placeholder,
 .form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   color: #adadad;
 }
 
 .form__input::placeholder, .form__textarea::placeholder,
 .form input::placeholder, .form textarea::placeholder {
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   color: #adadad;
 }
 
 @media only screen and (min-width: 1100px) {
   .form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder,
   .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
   .form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder,
   .form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
   .form__input::-ms-input-placeholder, .form__textarea::-ms-input-placeholder,
   .form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
   .form__input::placeholder, .form__textarea::placeholder,
   .form input::placeholder, .form textarea::placeholder {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
 }
 
@@ -330,13 +330,23 @@ select:-webkit-autofill:focus {
 
 .u-list__text {
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   line-height: 1.5;
 }
 
 @media only screen and (min-width: 1100px) {
   .u-list__text {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
+  }
+}
+
+.u-list__item--description {
+  margin-top: 1.7vh;
+}
+
+@media only screen and (min-width: 1100px) {
+  .u-list__item--description {
+    margin-top: 1.5vh;
   }
 }
 
@@ -344,7 +354,7 @@ select:-webkit-autofill:focus {
   padding-right: 5px;
   color: #E52025;
   font-family: HelveticaReg;
-  font-size: max(27.5px, 3.4vh);
+  font-size: max(29.5px, 3.4vh);
 }
 
 .u-list__slash--blue {
@@ -402,7 +412,7 @@ select:-webkit-autofill:focus {
   left: -3.4vh;
   padding-bottom: 5px;
   content: counter(my-awesome-counter) ". ";
-  font-size: max(27.5px, 3.4vh);
+  font-size: max(29.5px, 3.4vh);
   font-family: HelveticaBold;
 }
 
@@ -413,13 +423,13 @@ select:-webkit-autofill:focus {
 }
 
 .nav-toggle__text {
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
   text-transform: uppercase;
 }
 
 @media only screen and (min-width: 1100px) {
   .nav-toggle__text {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
 }
 
@@ -446,7 +456,7 @@ select:-webkit-autofill:focus {
 }
 
 .nav__link--social {
-  font-size: max(16px, 2.3vh);
+  font-size: max(22px, 2.4vh);
   margin-bottom: 5rem;
   padding: 0;
 }
@@ -473,12 +483,12 @@ select:-webkit-autofill:focus {
 
 .footer__link {
   font-family: HelveticaLight;
-  font-size: max(16px, 1.8vh);
+  font-size: max(17px, 1.9vh);
 }
 
 @media only screen and (min-width: 1100px) {
   .footer__link {
-    font-size: max(16px, 2.3vh);
+    font-size: max(22px, 2.4vh);
   }
 }
 
@@ -489,14 +499,14 @@ select:-webkit-autofill:focus {
 
 .footer__copyright {
   text-align: center;
-  font-size: max(12px, 1.25vh);
+  font-size: max(14px, 1.25vh);
   margin-top: 1.7vh;
 }
 
 .btn {
   margin-top: 3.4vh;
   font-family: HelveticaBold;
-  font-size: max(20px, 2.1vh);
+  font-size: max(20px, 2.2vh);
   text-transform: uppercase;
   -webkit-transition: 0.25s ease-in-out;
   transition: 0.25s ease-in-out;
@@ -505,7 +515,7 @@ select:-webkit-autofill:focus {
 @media only screen and (min-width: 1100px) {
   .btn {
     margin-top: 6vh;
-    font-size: 2.5vh;
+    font-size: max(20px, 2.6vh);
   }
 }
 
@@ -531,7 +541,7 @@ select:-webkit-autofill:focus {
 
 @media only screen and (min-width: 1100px) {
   .btn-form {
-    font-size: 2.5vh;
+    font-size: max(20px, 2.6vh);
     padding: 1.5vh 6vh;
     margin-top: 3vh;
   }
@@ -1041,6 +1051,7 @@ header {
 
 .nav-toggle:hover {
   color: #E52025;
+  cursor: pointer;
 }
 
 .nav-toggle:hover .nav-toggle__icon span {
@@ -1072,6 +1083,9 @@ header {
   margin-left: 1rem;
   -webkit-transition: .25s ease-in-out;
   transition: .25s ease-in-out;
+}
+
+.nav-toggle__icon:hover {
   cursor: pointer;
 }
 

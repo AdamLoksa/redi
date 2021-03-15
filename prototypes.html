@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="cz">
+<head>
+   <!-- Look at my portfolio: adamloksa.com -->
+
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>REDI Industries</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+
+   <!-- Favicon -->
+   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+   <meta name="msapplication-TileColor" content="#da532c">
+   <meta name="theme-color" content="#ffffff">
+
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="styles/style.css">
+</head> 
+<body>
+  <!-- Navbar -->
+  <header>
+   <div class="menu">
+      <a href="./index.html" class="nav__logo"><img src="./logo/logo.png" alt=""></a>
+
+      <a class="nav-toggle" href="#">
+         <div class="nav-toggle__text">Menu</div>
+         <div class="nav-toggle__icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+         </div>
+      </a>
+   </div>
+
+   <nav class="nav">
+      <div class="nav-content">
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a class="nav__link" href="./logos.html">3D loga & Branding</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./manufacturing.html" class="nav__link">Zákazková výroba</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./prototypes.html" class="nav__link">Prototypová výroba</a>
+            </li>
+         </ul>
+
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a href="./index.html" class="nav__link">Homepage</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="./contact.html" class="nav__link">Kontakt</a>
+            </li>
+
+            <li class="nav__item--social">
+               <a href="#" class="nav__link nav__link--social">Facebook</a>
+            </li>
+
+            <li>
+               <a href="#" class="nav__link nav__link--social">Instagram</a>
+            </li>
+
+            <li>
+               <a href="#" class="nav__link nav__link--social ">YouTube</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+  </header>
+
+
+   <main>
+      <!-- Introduction -->
+      <section id="redi-prototypes" class="page-intro">
+         <picture>
+            <source media="(min-width: 1100px)"
+                    srcset="./img/41-Prototypes-Intro__BG-1500.jpg 1500w,
+                            ./img/41-Prototypes-Intro__BG-2000.jpg 2000w">
+            <source srcset="./img/41-Prototypes-Intro__BG-mobile-750.jpg 750w,
+                            ./img/41-Prototypes-Intro__BG-mobile-1000.jpg 1000w,
+                            ./img/41-Prototypes-Intro__BG-mobile-1500.jpg 1500w">
+            <img class="picture__img" src="./img/41-Prototypes-Intro__BG-1500.jpg" alt="" loading="lazy">
+         </picture>
+
+         <div class="menu menu--intro">
+            <a href="./index.html" class="nav__logo"><img src="./logo/logo.png" alt=""></a>
+   
+            <a class="nav-toggle" href="#">
+               <div class="nav-toggle__text">Menu</div>
+               <div class="nav-toggle__icon">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+               </div>
+            </a>
+         </div>
+
+         <div class="page-intro__text">
+            <h1 class="page-title">
+               Výroba prototypů
+            </h1>
+         </div>
+      </section>
+      
+      <!-- Logos description -->
+      <section class="text-column">
+         <div class="text-column__container">
+            <div class="text-column__item text-column__item--first">
+               <h2 class="section-title">Co děláme</h2>
+
+               <p class="text">Vy máte nápad, my ho umíme vyrobit. Pomůžeme každému, kdo:
+               </p>
+
+               <ul class="u-list">
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">vyvíjí svůj produkt a potřebuje pomoc s jeho výrobou 
+                     </p>
+                  </li>
+      
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">potřebuje specifickou součástku nebo chce nějakou vylepšit</p>
+                  </li>
+      
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">potřebuje vyrobit stroj, který se standardně nevyrábí</p>
+                  </li>
+               </ul>
+            </div>
+   
+            <div class="text-column__item">
+               <h2 class="section-title">Průběh výroby</h2>
+               <ol class="o-list">
+                  <li class="o-list__text">Zjistíme, co potřebujete a najdeme optimální způsob realizace.</li>
+
+                  <li class="o-list__text">Pustíme se do projektování a společně doladíme detaily i finální podobu.</li>
+
+                  <li class="o-list__text">Začneme s výrobou, jejíž průběh s Vámi budeme pravidelně konzultovat .</li>
+               </ol>
+            </div>
+         </div>
+      </section>
+
+      <!-- Work gallery logos -->
+      <section id="prototypes-gallery" class="gallery-container">
+         <!-- <div class="gallery__btns">
+            <div class="gallery__btn gallery__btn--left">
+               <svg class="gallery__btn-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.24 82.53"><defs></defs><polyline class="cls-1" points="71.94 8.52 19 41.02 71.94 74.04"/></svg>
+            </div>
+
+            <div class="gallery__btn gallery__btn--right">
+               <svg class="gallery__btn-svg" id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 77.24 82.53"><defs></defs><polyline class="cls-1" points="5.29 74.01 58.23 41.51 5.29 8.48"/></svg>
+            </div>
+         </div> -->
+
+         <div class="gallery">
+            <div class="gallery__item gallery__item--first">
+               <img class="gallery__img" data-gallery="firstImage" src="./gallery/box1.jpg" alt="">
+            </div>
+   
+            <div class="gallery__item gallery__item--second">
+               <img class="gallery__img" data-gallery="secondImage" src="./gallery/box2.jpg" alt="">
+            </div>
+   
+            <div class="gallery__item gallery__item--third">
+               <img class="gallery__img" data-gallery="thirdImage" src="./gallery/box3.jpg" alt="">
+               <div class="gallery__text">
+                  <h3 class="gallery-title" data-gallery="headline">Nadpis</h3>
+                  <p class="text text--gallery" data-gallery="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores.</p>
+               </div>
+            </div>
+         </div>
+      </section>
+   
+
+      <!-- Contact form -->
+      <section class="form-container">
+         <h2 class="section-title">Kontaktujte nás</h2>
+         <div class="form">
+            <div class="form__item">
+               <form>
+                  <ul> 
+                     <li>
+                        <input class="form__input" type="text" id="name" name="user_name" aria-label="name" placeholder="jméno" title="vložte své jméno, např.: Petr Novák" required pattern="[ ./a-zA-ZáčďéěíňóřšťůúýžÁČĎÉĚÍŇÓŘŠŤŮÚÝŽ-]+[ \-]?">
+                     </li>
+                     
+                     <li>
+                        <input class="form__input" type="text" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                     </li>
+                     
+                     <li>
+                        <input class="form__input" type="text" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
+                     </li>
+                        
+                     <li>
+                        <textarea class="form__textarea" id="message" name="user_message" aria-label="message" placeholder="Přiložte výkres nebo náčrt a popište, co Vám můžeme pomoct vyřešit."></textarea>
+                     </li>
+
+                     <li class="form__file">
+                        <label for="files" class="form__file-attach"><span>+</span> <span>připojit skicu</span></label>
+                        <input id="files" class="form__file-input" type="file">
+                     </li>
+
+                     <li>
+                        <label class="form__data" for="data">
+                           <span class="form__data-text">Souhlasím se</span>
+                           <input class="form__checkbox" type="checkbox" id="data" name="user_data">
+                           <span class="form__checkmark"></span><a class="form__data-link" href="#">zpracováním osobních údajů</a>.
+                        </label>
+                     </li>
+                     
+                     <li>
+                        <button class="btn btn-form" type="submit">Odeslat</button>
+                     </li>
+                  </ul>
+               </form>
+            </div>
+
+            <div class="form__item form__headline">
+               <h2 class="redi-claim">
+                  <div>Everything</div>
+                  <div>Was Once</div>
+                  <div>Impossible<span class="redi-dot--inv">.</span></div>
+               </h2>
+
+               <ul class="u-list">
+                  <li class="u-list__item">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">redi@redi.industries</p>
+                  </li>
+
+                  <li class="u-list__item">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">+420 604 726 152</p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+   </main>
+   
+
+   <!-- Footer -->
+   <footer class="footer">
+      <ul class="footer__social">
+         <li class="footer__item"><a href="#" class="footer__link">Facebook</a></li>
+         <li class="footer__item"><a href="#" class="footer__link">Instagram</a></li>
+         <li class="footer__item"><a href="#" class="footer__link">YouTube</a></li>
+      </ul>
+
+      <p class="footer__copyright">© 2021 Research Division Industries</p>
+   </footer>
+
+
+   <script type="text/javascript" src="js/app.js"></script>
+   <script type="text/javascript" src="js/gallery.js"></script>
+</body>
+</html>
