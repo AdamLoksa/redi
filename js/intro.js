@@ -67,13 +67,13 @@ const websiteIntro = (function() {
 // Local storage
 const ctrLocalStorage = (function() {
     // Set data
-    function saveData() {
-        localStorage.setItem('redi-Intro', 'true');
+    function saveData(saveKey, value) {
+        localStorage.setItem(saveKey, value);
     }
 
     // Load data
-    function loadData() {
-        return localStorage.getItem('redi-Intro');
+    function loadData(loadKey) {
+        return localStorage.getItem(loadKey);
     }
 
     // Clear data
@@ -83,7 +83,7 @@ const ctrLocalStorage = (function() {
     };
 })();
 
-// if (ctrLocalStorage.load() != 'true') {
-//     websiteIntro.init();
-//     ctrLocalStorage.save();
-// }
+if (ctrLocalStorage.load('first-visit') != 'true') {
+    websiteIntro.init();
+    ctrLocalStorage.save('first-visit', 'true');
+}
