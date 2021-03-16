@@ -54,7 +54,7 @@ ul {
 }
 
 p, a, li {
-  font-family: HelveticaLight, serif;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
   color: #ffffff;
   line-height: 1.5;
@@ -67,7 +67,7 @@ p, a, li {
 }
 
 .page-title {
-  font-family: HelveticaBold, serif;
+  font-family: HelveticaBold, Helvetica;
   font-size: max(40px, 6vh);
   text-transform: uppercase;
 }
@@ -105,7 +105,7 @@ p, a, li {
 }
 
 .section-title {
-  font-family: HelveticaBold;
+  font-family: HelveticaBold, Helvetica;
   font-size: max(29.5px, 3.4vh);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -127,7 +127,7 @@ p, a, li {
 
 .services-title {
   margin: 1.7vh;
-  font-family: HelveticaReg;
+  font-family: HelveticaReg, Helvetica;
   font-size: max(24px, 3vh);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -141,7 +141,7 @@ p, a, li {
 }
 
 .gallery-title {
-  font-family: HelveticaBold;
+  font-family: HelveticaBold, Helvetica;
   font-size: max(24px, 3vh);
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -156,7 +156,7 @@ p, a, li {
 
 .redi-claim {
   margin-top: 3.4vh;
-  font-family: HelveticaBold;
+  font-family: HelveticaBold, Helvetica;
   font-size: max(40px, 6vh);
   text-transform: uppercase;
   color: #E52025;
@@ -171,7 +171,7 @@ p, a, li {
 
 .text {
   margin-top: 3.4vh;
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
   line-height: 1.5;
 }
@@ -255,7 +255,7 @@ select:-webkit-autofill:focus {
 .form input, .form textarea {
   margin-top: 0.425vh;
   color: #adadad;
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
 }
 
@@ -268,28 +268,28 @@ select:-webkit-autofill:focus {
 
 .form__input::-webkit-input-placeholder, .form__textarea::-webkit-input-placeholder,
 .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
   color: #adadad;
 }
 
 .form__input:-ms-input-placeholder, .form__textarea:-ms-input-placeholder,
 .form input:-ms-input-placeholder, .form textarea:-ms-input-placeholder {
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
   color: #adadad;
 }
 
 .form__input::-ms-input-placeholder, .form__textarea::-ms-input-placeholder,
 .form input::-ms-input-placeholder, .form textarea::-ms-input-placeholder {
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
   color: #adadad;
 }
 
 .form__input::placeholder, .form__textarea::placeholder,
 .form input::placeholder, .form textarea::placeholder {
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
   color: #adadad;
 }
@@ -329,7 +329,7 @@ select:-webkit-autofill:focus {
 }
 
 .u-list__text {
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
   line-height: 1.5;
 }
@@ -353,7 +353,7 @@ select:-webkit-autofill:focus {
 .u-list__slash {
   padding-right: 5px;
   color: #E52025;
-  font-family: HelveticaReg;
+  font-family: HelveticaReg, Helvetica;
   font-size: max(29.5px, 3.4vh);
 }
 
@@ -413,7 +413,7 @@ select:-webkit-autofill:focus {
   padding-bottom: 5px;
   content: counter(my-awesome-counter) ". ";
   font-size: max(29.5px, 3.4vh);
-  font-family: HelveticaBold;
+  font-family: HelveticaBold, Helvetica;
 }
 
 @media only screen and (min-width: 1100px) {
@@ -438,7 +438,7 @@ select:-webkit-autofill:focus {
 }
 
 .nav__link {
-  font-family: HelveticaBold, serif;
+  font-family: HelveticaBold, Helvetica;
   font-size: 3.5vh;
   text-transform: uppercase;
   -webkit-transition: color 0.2s ease-in-out;
@@ -482,7 +482,7 @@ select:-webkit-autofill:focus {
 }
 
 .footer__link {
-  font-family: HelveticaLight;
+  font-family: HelveticaLight, Helvetica;
   font-size: max(17px, 1.9vh);
 }
 
@@ -505,7 +505,7 @@ select:-webkit-autofill:focus {
 
 .btn {
   margin-top: 3.4vh;
-  font-family: HelveticaBold;
+  font-family: HelveticaBold, Helvetica;
   font-size: max(20px, 2.2vh);
   text-transform: uppercase;
   -webkit-transition: 0.25s ease-in-out;
