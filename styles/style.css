@@ -456,7 +456,7 @@ select:-webkit-autofill:focus {
 }
 
 .nav__link--social {
-  font-size: max(22px, 2.4vh);
+  font-size: max(14px, 2.4vh);
   margin-bottom: 5rem;
   padding: 0;
 }
