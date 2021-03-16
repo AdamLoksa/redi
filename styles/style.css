@@ -1517,7 +1517,7 @@ section {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 0 9vw 9vw 0;
+  padding: 0 9vw 18vw 0;
 }
 
 @media only screen and (min-width: 1100px) {
