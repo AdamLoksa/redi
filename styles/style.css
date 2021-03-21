@@ -1245,6 +1245,10 @@ header {
   }
 }
 
+.text-row {
+  margin: 3.4vh;
+}
+
 @media only screen and (min-width: 1100px) {
   .text-row {
     display: -webkit-box;
@@ -1265,6 +1269,9 @@ header {
   }
   .text-row .section-title, .text-row .text {
     text-align: center;
+  }
+  .text-row .text {
+    margin-top: 0;
   }
 }
 
