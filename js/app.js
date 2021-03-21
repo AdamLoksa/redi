@@ -16,11 +16,6 @@ function toggleMenu(event) {
     setTimeout(function() {
         navigation.classList.toggle('nav--opacity');
     }, 100);
-
-    setTimeout(function() {
-        htmlElement.classList.toggle('stop-scrolling');
-    }, 500);
-
 }
 
 

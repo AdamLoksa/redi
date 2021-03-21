@@ -1239,20 +1239,6 @@ header {
   }
 }
 
-.text-row {
-  margin: 3.4vh;
-}
-
-.text-row .u-list {
-  margin-top: 3.4vh;
-}
-
-@media only screen and (min-width: 1100px) {
-  .text-row .u-list {
-    margin-top: 6vh;
-  }
-}
-
 @media only screen and (min-width: 1100px) {
   .text-row {
     display: -webkit-box;
@@ -1265,6 +1251,9 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     min-height: 45vh;
     margin: 12vh 6vh;
   }
@@ -1292,6 +1281,16 @@ header {
 
 .u-list__slash {
   margin-right: 11px;
+}
+
+.u-list--contact-page {
+  margin-top: 1.13333vh;
+}
+
+@media only screen and (min-width: 1100px) {
+  .u-list--contact-page {
+    margin-top: 1.5vh;
+  }
 }
 
 @media only screen and (min-width: 1100px) {
