@@ -955,7 +955,7 @@ header {
 .menu {
   position: fixed;
   height: 4.5rem;
-  width: 100%;
+  width: 100vw;
   top: 0;
   padding: 4.5vh 3.4vh;
   display: -webkit-box;
