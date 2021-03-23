@@ -1,6 +1,6 @@
 // Toggle menu
 const navBtn = Array.from(document.querySelectorAll('.nav-toggle'));
-navBtn.forEach(ele => ele.addEventListener('click', (event) => { toggleMenu(event) }))
+navBtn.forEach(ele => ele.addEventListener('click', (event) => { toggleMenu(event) }));
 
 function toggleMenu(event) {
     event.preventDefault();
@@ -15,7 +15,7 @@ function toggleMenu(event) {
 
     setTimeout(function() {
         navigation.classList.toggle('nav--opacity');
-        bodyElement.classList.toggle('stop-scrolling');
+        htmlElement.classList.toggle('stop-scrolling');
     }, 100);
 }
 
