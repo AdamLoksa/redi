@@ -13,10 +13,37 @@ function toggleMenu(event) {
     navigation.classList.toggle('nav--open');
     navIcon.forEach(ele => ele.classList.toggle('nav-toggle--open'));
 
-    setTimeout(function() {
-        navigation.classList.toggle('nav--opacity');
-        bodyElement.classList.toggle('stop-scrolling');
-    }, 100);
+    // setTimeout(function() {
+    //     navigation.classList.toggle('nav--opacity');
+    //     bodyElement.classList.toggle('stop-scrolling');
+    // }, 100);
+
+    if (bodyElement.classList.contains('stop-scrolling')) {
+        navigation.classList.remove('nav--opacity');
+        toggleBodyScroll(false);
+    } else {
+        setTimeout(function() {
+            navigation.classList.add('nav--opacity');
+            toggleBodyScroll(true);
+        }, 100);
+    }
+}
+
+function toggleBodyScroll(disable) {
+    if (!window.tempScrollTop) {
+      window.tempScrollTop = window.pageYOffset; 
+      // save the current position in a global variable so I can access again later
+    }
+
+    if (disable) {
+      document.body.classList.add('stop-scrolling');
+      document.body.style.top = `-${window.tempScrollTop}px`;
+    } else {
+      document.body.classList.remove('stop-scrolling');
+      document.body.style.top = `0px`;
+      window.scrollTo({top: window.tempScrollTop});
+      window.tempScrollTop = 0;
+    }
 }
 
 
