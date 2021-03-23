@@ -9,13 +9,18 @@ function toggleMenu(event) {
     const navigation = document.querySelector('.nav');
     const bodyElement = document.querySelector('body');
     const htmlElement = document.querySelector('html');
+    const menuElement = document.querySelector('.menu');
 
     navigation.classList.toggle('nav--open');
     navIcon.forEach(ele => ele.classList.toggle('nav-toggle--open'));
 
+    let menuWidth = menuElement.clientWidth;
+    console.log(menuWidth);
+
     setTimeout(function() {
         navigation.classList.toggle('nav--opacity');
         htmlElement.classList.toggle('stop-scrolling');
+        menuElement.style.width = `${menuWidth}px`;
     }, 100);
 
 }
