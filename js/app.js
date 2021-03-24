@@ -14,7 +14,7 @@ function toggleMenu(event) {
     navigation.classList.toggle('nav--open');
     navIcon.forEach(ele => ele.classList.toggle('nav-toggle--open'));
 
-    let menuWidth = menuElement.clientWidth;
+    let menuWidth = bodyElement.clientWidth;
     console.log(menuWidth);
 
     setTimeout(function() {
@@ -22,6 +22,7 @@ function toggleMenu(event) {
         htmlElement.classList.toggle('stop-scrolling');
         menuElement.style.width = `${menuWidth}px`;
     }, 100);
+    
 
 }
 
@@ -32,6 +33,9 @@ let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
     let currentScrollPos = window.pageYOffset;
     const menu = document.querySelector('.menu');
+
+    if (menu.classList.contains('menu--intro')) return;
+    
     const introBreakPoint = window.innerHeight * 0.5;
 
     if (prevScrollpos > currentScrollPos & currentScrollPos > introBreakPoint) {
@@ -40,7 +44,7 @@ window.onscroll = function() {
         menu.style.background = 'rgba(20,20,20,0.98)';
     } else if (currentScrollPos < introBreakPoint * 0.25) {
         menu.style.opacity = '0';
-    } else {
+    } else if (!document.querySelector('html').classList.contains('stop-scrolling')) {
         menu.style.top = '-5rem';
     }
     prevScrollpos = currentScrollPos;
