@@ -14,16 +14,13 @@ function toggleMenu(event) {
     navigation.classList.toggle('nav--open');
     navIcon.forEach(ele => ele.classList.toggle('nav-toggle--open'));
 
-    let menuWidth = bodyElement.clientWidth;
-    console.log(menuWidth);
+    let bodyWidth = bodyElement.clientWidth;
 
     setTimeout(function() {
         navigation.classList.toggle('nav--opacity');
         htmlElement.classList.toggle('stop-scrolling');
-        menuElement.style.width = `${menuWidth}px`;
+        menuElement.style.width = `${bodyWidth}px`;
     }, 100);
-    
-
 }
 
 
@@ -31,11 +28,10 @@ function toggleMenu(event) {
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
-    let currentScrollPos = window.pageYOffset;
     const menu = document.querySelector('.menu');
-
     if (menu.classList.contains('menu--intro')) return;
     
+    let currentScrollPos = window.pageYOffset;
     const introBreakPoint = window.innerHeight * 0.5;
 
     if (prevScrollpos > currentScrollPos & currentScrollPos > introBreakPoint) {
@@ -47,6 +43,7 @@ window.onscroll = function() {
     } else if (!document.querySelector('html').classList.contains('stop-scrolling')) {
         menu.style.top = '-5rem';
     }
+
     prevScrollpos = currentScrollPos;
 }
 
@@ -80,3 +77,25 @@ formInput.addEventListener('change', (event) => {
         document.querySelector('.form__file-attach').innerHTML = inputName.split("\\").pop();
     }
 })
+
+
+// Observer for fade-in
+const faders = document.querySelectorAll('.fade-in');
+const appearOptions = {
+    root: null,
+    rootMargin: '0px',
+    threshold: 0.1
+}
+
+const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll) {
+    entries.forEach(entry => {
+        if (!entry.isIntersecting) {
+            return;
+        } else {
+            entry.target.classList.add('appear');
+            appearOnScroll.unobserve(entry.target);
+        }
+    })
+}, appearOptions);
+
+faders.forEach(fader => appearOnScroll.observe(fader));

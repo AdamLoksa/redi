@@ -18,7 +18,7 @@ img {
   max-width: 100%;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
 }
 
@@ -1385,6 +1385,22 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -1;
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+  -webkit-transition: opacity 0.9s ease 0.15s, -webkit-transform 0.9s ease 0.15s;
+  transition: opacity 0.9s ease 0.15s, -webkit-transform 0.9s ease 0.15s;
+  transition: transform 0.9s ease 0.15s, opacity 0.9s ease 0.15s;
+  transition: transform 0.9s ease 0.15s, opacity 0.9s ease 0.15s, -webkit-transform 0.9s ease 0.15s;
+}
+
+.fade-in.appear {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
 }
 
 .wp-intro {
