@@ -1616,6 +1616,11 @@ section {
           animation-iteration-count: 4;
 }
 
+.page-intro__animation {
+  position: relative;
+  opacity: 0;
+}
+
 .services {
   margin: 3.4vh;
   display: -webkit-box;
