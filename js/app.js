@@ -99,3 +99,27 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
 }, appearOptions);
 
 faders.forEach(fader => appearOnScroll.observe(fader));
+
+
+// Local storage module
+const ctrLocalStorage = (function() {
+    // Set data
+    function saveData(saveKey, value) {
+        localStorage.setItem(saveKey, value);
+    }
+
+    // Load data
+    function loadData(loadKey) {
+        return localStorage.getItem(loadKey);
+    }
+
+    // Clear data
+    return {
+        save: saveData,
+        load: loadData
+    };
+})();
+
+if (ctrLocalStorage.load('first-visit') != 'true') {
+    ctrLocalStorage.save('first-visit', 'true');
+}

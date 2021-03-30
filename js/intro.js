@@ -13,11 +13,6 @@ const websiteIntro = (function() {
     skipIntro.addEventListener('click', hideIntro);
     introVideo.addEventListener('timeupdate', handleProgress);
 
-
-    // function playVideo () {
-        
-    // }
-
     function insertIntro() {
         wpIntro.classList.add('wp-intro--show');
         bodyElement.classList.add('stop-scrolling');
@@ -65,25 +60,6 @@ const websiteIntro = (function() {
 
 
 // Local storage
-const ctrLocalStorage = (function() {
-    // Set data
-    function saveData(saveKey, value) {
-        localStorage.setItem(saveKey, value);
-    }
-
-    // Load data
-    function loadData(loadKey) {
-        return localStorage.getItem(loadKey);
-    }
-
-    // Clear data
-    return {
-        save: saveData,
-        load: loadData
-    };
-})();
-
-if (ctrLocalStorage.load('first-visit') != 'true') {
+if (localStorage.getItem('first-visit')!= 'true') {
     websiteIntro.init();
-    ctrLocalStorage.save('first-visit', 'true');
 }
