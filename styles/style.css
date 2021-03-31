@@ -508,6 +508,16 @@ select:-webkit-autofill:focus {
   margin-top: 1.7vh;
 }
 
+.cookies-bar {
+  font-family: HelveticaLight, Helvetica;
+  font-size: 0.75rem;
+}
+
+.cookies-bar__info {
+  font-size: 0.75rem;
+  text-decoration: underline;
+}
+
 .btn {
   margin-top: 3.4vh;
   font-family: HelveticaBold, Helvetica;
@@ -564,6 +574,19 @@ select:-webkit-autofill:focus {
 
 .btn--blue:hover {
   color: #3B82AD;
+}
+
+.btn--cookies {
+  margin: 0.35rem 0 0.35rem 0.75rem;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  border: 0;
+}
+
+.btn--cookies:hover {
+  color: #ffffff;
+  background-color: #E52025;
+  cursor: pointer;
 }
 
 .wp-intro__skip__btn {
@@ -631,7 +654,7 @@ select:-webkit-autofill:focus {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: rgba(20, 20, 20, 0.7);
+  background-color: rgba(20, 20, 20, 0.85);
   opacity: 1;
   -webkit-transition: opacity ease-in-out 0.25s;
   transition: opacity ease-in-out 0.25s;
@@ -1401,6 +1424,35 @@ section {
   opacity: 1;
   -webkit-transform: translateY(0px);
           transform: translateY(0px);
+}
+
+.cookies-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  padding: 0.75rem;
+  background-color: rgba(20, 20, 20, 0.85);
+  z-index: 10;
+  -webkit-transition: opacity ease-in-out 0.25s;
+  transition: opacity ease-in-out 0.25s;
+}
+
+@media only screen and (min-width: 1100px) {
+  .cookies-bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0.375vh;
+  }
 }
 
 .wp-intro {

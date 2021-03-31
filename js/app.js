@@ -24,7 +24,7 @@ function toggleMenu(event) {
 }
 
 
-// Menu scroll
+// Hide menu on scroll
 let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function() {
@@ -48,7 +48,7 @@ window.onscroll = function() {
 }
 
 
-// Mobile full height
+// First page mobile full height
 const wh = window.innerHeight;
 const pageIntro = document.querySelector('.page-intro');
 let firstVisit = 'false';
@@ -67,7 +67,7 @@ window.addEventListener('resize', () => {
 });
 
 
-// Form file attach
+// Change form file input name
 const formInput = document.querySelector('.form__file');
 
 formInput.addEventListener('change', (event) => {
@@ -122,4 +122,25 @@ const ctrLocalStorage = (function() {
 
 if (ctrLocalStorage.load('first-visit') != 'true') {
     ctrLocalStorage.save('first-visit', 'true');
+}
+
+
+// Cookie bar
+const cookieInfo = document.getElementById('cookies');
+cookieInfo.addEventListener('click', saveCookies);
+
+function saveCookies(e) {
+    if (e.target.classList.contains('btn')) {
+        ctrLocalStorage.save('cookies', 'true');
+        cookieInfo.style.opacity = '0';
+
+        setTimeout(function() {
+        cookieInfo.style.display = 'none';
+        }, 250);
+    }
+}
+
+if (ctrLocalStorage.load('cookies') != 'true') {
+    cookieInfo.style.display = 'flex';
+    cookieInfo.style.opacity = '1';
 }
