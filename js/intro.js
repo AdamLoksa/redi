@@ -69,7 +69,7 @@ if (localStorage.getItem('first-visit')!= 'true') {
 const titleTransitions = document.querySelector('.text-center');
 const transitionOptions = {
     root: null,
-    rootMargin: '200px',
+    rootMargin: '100px',
     threshold: 0.5,
 }
 
