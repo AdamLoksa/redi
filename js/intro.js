@@ -65,41 +65,14 @@ if (localStorage.getItem('first-visit')!= 'true') {
 }
 
 
-// Observer for landing page text animation
-const titleTransitions = document.querySelector('.text-center');
-const transitionOptions = {
-    root: null,
-    rootMargin: '0px',
-    threshold: 0.5
-}
-
-const changeTitleText = new IntersectionObserver(function(entry, changeTitleText) {
-    entry.forEach(entry => {
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            console.log('spustil som sa');
-
-            const pageTitleTransitions = document.querySelectorAll('.page-title__transition');
-            const timeOut = 500;
-
-            pageTitleTransitions.forEach(transition => {
-                if (transition.classList.contains('page-title__transition--fade')) {
-                    setTimeout(function() {
-                        transition.classList.remove('page-title__transition--fade')
-                    }, timeOut);
-                } else {
-                    transition.classList.add('page-title__transition--fade')
-                    
-                    setTimeout(function() {
-                        transition.style = 'display: none';
-                    }, timeOut);
-                }
-            })
-
-            changeTitleText.unobserve(entry.target);
-        }
+// Home page title animation
+const pageTitleAnimation = document.querySelectorAll('.page-title__animation--text');
+pageTitleAnimation.forEach(element => {
+    element.addEventListener('animationend', () => {
+        element.style = 'display: none';
     })
-}, transitionOptions);
+})
 
-changeTitleText.observe(titleTransitions);
+
+
+
