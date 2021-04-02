@@ -70,7 +70,7 @@ const titleTransitions = document.querySelector('.text-center');
 const transitionOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.01
+    threshold: 0.5
 }
 
 const changeTitleText = new IntersectionObserver(function(entry, changeTitleText) {
