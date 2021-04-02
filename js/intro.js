@@ -78,6 +78,8 @@ const changeTitleText = new IntersectionObserver(function(entry, changeTitleText
         if (!entry.isIntersecting) {
             return;
         } else {
+            console.log('spustil som sa');
+
             const pageTitleTransitions = document.querySelectorAll('.page-title__transition');
             const timeOut = 500;
 
