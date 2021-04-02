@@ -69,8 +69,8 @@ if (localStorage.getItem('first-visit')!= 'true') {
 const titleTransitions = document.querySelector('.text-center');
 const transitionOptions = {
     root: null,
-    rootMargin: '100px',
-    threshold: 0.5,
+    rootMargin: '0px',
+    threshold: 0.01
 }
 
 const changeTitleText = new IntersectionObserver(function(entry, changeTitleText) {
