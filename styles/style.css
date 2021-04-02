@@ -109,6 +109,16 @@ p, a, li {
   color: #3B82AD;
 }
 
+.page-title__transition {
+  opacity: 1;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page-title__transition--fade {
+  opacity: 0;
+}
+
 .section-title {
   font-family: HelveticaBold, Helvetica;
   font-size: max(29.5px, 3.4vh);
