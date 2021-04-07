@@ -62,16 +62,18 @@ const websiteIntro = (function() {
 // Local storage
 if (localStorage.getItem('first-visit')!= 'true') {
     websiteIntro.init();
+} else {
+    // Home page title animation
+    const pageTitleAnimation = document.querySelectorAll('.page-title__animation--text');
+    pageTitleAnimation.forEach(element => {
+        element.addEventListener('animationend', () => {
+            element.style = 'display: none';
+        })
+    })
 }
 
 
-// Home page title animation
-const pageTitleAnimation = document.querySelectorAll('.page-title__animation--text');
-pageTitleAnimation.forEach(element => {
-    element.addEventListener('animationend', () => {
-        element.style = 'display: none';
-    })
-})
+
 
 
 
