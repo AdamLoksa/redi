@@ -115,8 +115,6 @@ p, a, li {
           animation-delay: 1.5s;
   -webkit-animation-duration: 0.75s;
           animation-duration: 0.75s;
-  -webkit-animation-name: title-fade;
-          animation-name: title-fade;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -145,8 +143,6 @@ p, a, li {
           animation-delay: 2.25s;
   -webkit-animation-duration: 0.5s;
           animation-duration: 0.5s;
-  -webkit-animation-name: dot-fade;
-          animation-name: dot-fade;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1562,8 +1558,6 @@ section {
           animation-delay: .5s;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-name: text-fade;
-          animation-name: text-fade;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
 }
@@ -1720,8 +1714,6 @@ section {
           animation-delay: .6s;
   -webkit-animation-duration: 3s;
           animation-duration: 3s;
-  -webkit-animation-name: text-fade;
-          animation-name: text-fade;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-iteration-count: 4;
