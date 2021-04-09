@@ -20,7 +20,7 @@ const websiteIntro = (function() {
         bodyElement.classList.add('wp-intro--fade');
     }
 
-    introVideo.oncanplay = () => {
+    introVideo.oncanplaythrough = () => {
         playVideo();
     }
 
