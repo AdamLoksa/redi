@@ -10,29 +10,88 @@ const gallery = (function() {
                firstImage: './gallery/gallery-logos-logo11.jpg',
                secondImage: './gallery/gallery-logos-logo12.jpg',
                thirdImage: './gallery/gallery-logos-logo13.jpg',
-               headline: 'Polystyren',
-               description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'XPS - tvrzený polystyren',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">vhodný pro loga a nápisy větších formátů a výrazné plasticity
+                     </p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">do interiérů i exteriérů (životnost min. 5 let)</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">velmi nízká hmotnost = snadná instalace - stačí přilepit</p>
+                  </li>
+               `,
             },
             {
                firstImage: './gallery/gallery-logos-logo21.jpg',
                secondImage: './gallery/gallery-logos-logo22.jpg',
                thirdImage: './gallery/gallery-logos-logo23.jpg',
-               headline: 'PVC',
-               description: 'Ipsum Lorem dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Pěněné PVC (FOREX)',
+               description: `
+               <li class="u-list__item u-list__item--description">
+                  <span class="u-list__slash">/</span>
+                  <p class="u-list__text">vhodný pro menší loga a loga se složitými tvary
+                  </p>
+               </li>
+
+               <li class="u-list__item u-list__item--description">
+                  <span class="u-list__slash">/</span>
+                  <p class="u-list__text">do interiérů i exteriérů (životnost min. 5 let)</p>
+               </li>
+
+               <li class="u-list__item u-list__item--description">
+                  <span class="u-list__slash">/</span>
+                  <p class="u-list__text">instalace pomocí lepidla, bez nutnosti vrtání</p>
+               </li>
+            `,
             },
             {
                firstImage: './gallery/gallery-logos-logo31.jpg',
                secondImage: './gallery/gallery-logos-logo32.jpg',
                thirdImage: './gallery/gallery-logos-logo33.jpg',
-               headline: 'PVC + Polystiren',
-               description: 'Ipsum Lorem dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Kombinace materiálů',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">pro dosažení co nejvyšší vizuální atraktivity loga se výrobní materiály často kombinují 
+                     </p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">v průběhu konzultace poptávky navrhneme možnosti zpracování loga a vybereme tu nejvhodnější
+                     </p>
+                  </li>
+               `,
             },
             {
                firstImage: './gallery/gallery-logos-logo41.jpg',
                secondImage: './gallery/gallery-logos-logo42.jpg',
                thirdImage: './gallery/gallery-logos-logo43.jpg',
-               headline: 'Použití',
-               description: 'Ipsum Lorem dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Referenční fotky',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">pro dosažení co nejvyšší vizuální atraktivity loga se výrobní materiály často kombinují 
+                     </p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">v průběhu konzultace poptávky navrhneme možnosti zpracování loga a vybereme tu nejvhodnější
+                     </p>
+                  </li>
+               `,
             },
          ];
       } else if (galleryType == 'prototypesGallery') {
@@ -41,15 +100,37 @@ const gallery = (function() {
                firstImage: './gallery/gallery-prototypes-prototype11.jpg',
                secondImage: './gallery/gallery-prototypes-prototype12.jpg',
                thirdImage: './gallery/gallery-prototypes-prototype13.jpg',
-               headline: 'Nadpis 1',
-               description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Zámková pojistka',
+               description:               
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">modelování repliky pojistky</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">frézování prototypu z PVC, 3D tisk 5 ks</p>
+                  </li>
+               `,
             },
             {
                firstImage: './gallery/gallery-prototypes-prototype21.jpg',
                secondImage: './gallery/gallery-prototypes-prototype22.jpg',
                thirdImage: './gallery/gallery-prototypes-prototype23.jpg',
-               headline: 'Nadpis 2',
-               description: 'Ipsum Lorem dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Přepravní box na domácí mazlíčky',
+               description:               
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">prototyp designové studie</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">výroba mechanicky funkční makety - předvýrobní vzor</p>
+                  </li>
+               `,
             },
          ];
       }  else if (galleryType == 'manufacturingGallery') {
@@ -58,22 +139,60 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project11.jpg',
                secondImage: './gallery/gallery-manufacturing-project12.jpg',
                thirdImage: './gallery/gallery-manufacturing-project13.jpg',
-               headline: 'Nadpis 1',
-               description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Jídelní stůl',
+               description:               
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">deska 30 mm březová překližka, lak týk</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">konstrukce surový smrk</p>
+                  </li>
+               `,
             },
             {
                firstImage: './gallery/gallery-manufacturing-project21.jpg',
                secondImage: './gallery/gallery-manufacturing-project22.jpg',
                thirdImage: './gallery/gallery-manufacturing-project23.jpg',
-               headline: 'Nadpis 2',
-               description: 'Ipsum Lorem dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Dětské stavebnice a nábytek pro TOTEMO.cz',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">vypalování vylamovací stavebnice - předtisková příprava</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">frézování desek na skládací prezentační nábytek</p>
+                  </li>
+               `,
             },
             {
                firstImage: './gallery/gallery-manufacturing-project31.jpg',
                secondImage: './gallery/gallery-manufacturing-project32.jpg',
                thirdImage: './gallery/gallery-manufacturing-project33.jpg',
-               headline: 'Nadpis 3',
-               description: 'Ipsum Lorem dolor sit amet consectetur adipisicing elit. Facere, dolores.',
+               headline: 'Posilovací stalky',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">bukové stalky 50 cm, bok 30 mm březová překližka</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">nosnost 200kg</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">oboustranně vypálené logo</p>
+                  </li>
+               `,
             },
          ];
       }

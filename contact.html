@@ -101,18 +101,18 @@
                <h2 class="section-title">Kontaktujte nás</h2>
                <div class="form">
                   <div class="form__item">
-                     <form>
+                     <form name="contact-form" method="POST" data-netlify="true">
                         <ul> 
                            <li>
                               <input class="form__input" type="text" id="name" name="user_name" aria-label="name" placeholder="jméno" title="vložte své jméno, např.: Petr Novák" required pattern="[ ./a-zA-ZáčďéěíňóřšťůúýžÁČĎÉĚÍŇÓŘŠŤŮÚÝŽ-]+[ \-]?">
                            </li>
                            
                            <li>
-                              <input class="form__input" type="text" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                              <input class="form__input" type="email" id="email" name="user_email" aria-label="e-mail" placeholder="e-mail" title="vložte svůj e-mail, např.: petr@seznam.cz" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                            </li>
                         
                            <li>
-                              <input class="form__input" type="text" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
+                              <input class="form__input" type="tel" id="phone" name="user_name" aria-label="phone" placeholder="telefon" title="vložte své telefónní číslo ve formě 100 200 300 nebo 100200300 nebo s předvolbou." pattern="^(\+42[0-9])? ?[1-9][0-9]{2} ?[0-9]{3} ?[0-9]{3}$" required>
                            </li>
                               
                            <li>
