@@ -15,7 +15,7 @@ const gallery = (function() {
                `
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">vhodný pro loga a nápisy větších formátů a výrazné plasticity
+                     <p class="u-list__text">přesná reprezentace barev z RAL a NCS vzorníků
                      </p>
                   </li>
 
@@ -68,7 +68,7 @@ const gallery = (function() {
 
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">v průběhu konzultace poptávky navrhneme možnosti zpracování loga a vybereme tu nejvhodnější
+                     <p class="u-list__text">navrhneme možnosti zpracování Vašeho loga a společně vybereme tu nejvhodnější
                      </p>
                   </li>
                `,
@@ -82,13 +82,13 @@ const gallery = (function() {
                `
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">pro dosažení co nejvyšší vizuální atraktivity loga se výrobní materiály často kombinují 
+                     <p class="u-list__text">u log z XPS a PVC není třeba jakkoliv zasahovat do podkladu, kde má být logo umístěné, stačí je nalepit - drží na fasádě, dřevě i skle 
                      </p>
                   </li>
 
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">v průběhu konzultace poptávky navrhneme možnosti zpracování loga a vybereme tu nejvhodnější
+                     <p class="u-list__text">pro usnadnění instalace nabízíme k logům šablony
                      </p>
                   </li>
                `,
@@ -157,7 +157,7 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project21.jpg',
                secondImage: './gallery/gallery-manufacturing-project22.jpg',
                thirdImage: './gallery/gallery-manufacturing-project23.jpg',
-               headline: 'Dětské stavebnice a nábytek pro TOTEMO.cz',
+               headline: 'Stavebnice a prezentační nábytek pro TOTEMO.cz',
                description:
                `
                   <li class="u-list__item u-list__item--description">
