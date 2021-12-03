@@ -139,17 +139,12 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project11.jpg',
                secondImage: './gallery/gallery-manufacturing-project12.jpg',
                thirdImage: './gallery/gallery-manufacturing-project13.jpg',
-               headline: 'Jídelní stůl',
+               headline: 'Balance',
                description:               
                `
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">deska 30 mm březová překližka, lak týk</p>
-                  </li>
-
-                  <li class="u-list__item u-list__item--description">
-                     <span class="u-list__slash">/</span>
-                     <p class="u-list__text">konstrukce surový smrk</p>
+                     <p class="u-list__text">Kompletní realizace interiéru kavárny</p>
                   </li>
                `,
             },
@@ -157,17 +152,17 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project21.jpg',
                secondImage: './gallery/gallery-manufacturing-project22.jpg',
                thirdImage: './gallery/gallery-manufacturing-project23.jpg',
-               headline: 'Stavebnice a prezentační nábytek pro TOTEMO.cz',
+               headline: 'Custom Coffee Table',
                description:
                `
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">vypalování vylamovací stavebnice - předtisková příprava</p>
+                     <p class="u-list__text">konferenční stolek na míru</p>
                   </li>
 
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">frézování desek na skládací prezentační nábytek</p>
+                     <p class="u-list__text">pro pohodlnou práci ze sedačky</p>
                   </li>
                `,
             },
@@ -175,6 +170,52 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project31.jpg',
                secondImage: './gallery/gallery-manufacturing-project32.jpg',
                thirdImage: './gallery/gallery-manufacturing-project33.jpg',
+               headline: 'EM – Display Cabinets',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">kompletní technologické řešení</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">výroba 2 kusů vitrín pro 27 Jewellery</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">design Eliška Monsportová</p>
+                  </li>
+               `,
+            },
+            {
+               firstImage: './gallery/gallery-manufacturing-project41.jpg',
+               secondImage: './gallery/gallery-manufacturing-project42.jpg',
+               thirdImage: './gallery/gallery-manufacturing-project43.jpg',
+               headline: 'Event Bar Tables',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">kompletní technologické řešení</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">výroba 2 kusů skládacích eventových pultů</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">pro JZT Ferments</p>
+                  </li>
+               `,
+            },
+            {
+               firstImage: './gallery/gallery-manufacturing-project51.jpg',
+               secondImage: './gallery/gallery-manufacturing-project52.jpg',
+               thirdImage: './gallery/gallery-manufacturing-project53.jpg',
                headline: 'Posilovací stalky',
                description:
                `
