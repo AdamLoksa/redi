@@ -152,7 +152,7 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project21.jpg',
                secondImage: './gallery/gallery-manufacturing-project22.jpg',
                thirdImage: './gallery/gallery-manufacturing-project23.jpg',
-               headline: 'Custom Coffee Table',
+               headline: 'Zakázkový konferenční stolek',
                description:
                `
                   <li class="u-list__item u-list__item--description">
@@ -170,7 +170,7 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project31.jpg',
                secondImage: './gallery/gallery-manufacturing-project32.jpg',
                thirdImage: './gallery/gallery-manufacturing-project33.jpg',
-               headline: 'EM – Display Cabinets',
+               headline: 'Podsvícené vytríny',
                description:
                `
                   <li class="u-list__item u-list__item--description">
@@ -193,7 +193,7 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project41.jpg',
                secondImage: './gallery/gallery-manufacturing-project42.jpg',
                thirdImage: './gallery/gallery-manufacturing-project43.jpg',
-               headline: 'Event Bar Tables',
+               headline: 'Skládací barové stoly na eventy',
                description:
                `
                   <li class="u-list__item u-list__item--description">
