@@ -100,24 +100,6 @@ const gallery = (function() {
                firstImage: './gallery/gallery-prototypes-prototype11.jpg',
                secondImage: './gallery/gallery-prototypes-prototype12.jpg',
                thirdImage: './gallery/gallery-prototypes-prototype13.jpg',
-               headline: 'Zámková pojistka',
-               description:               
-               `
-                  <li class="u-list__item u-list__item--description">
-                     <span class="u-list__slash">/</span>
-                     <p class="u-list__text">modelování repliky pojistky</p>
-                  </li>
-
-                  <li class="u-list__item u-list__item--description">
-                     <span class="u-list__slash">/</span>
-                     <p class="u-list__text">frézování prototypu z PVC, 3D tisk 5 ks</p>
-                  </li>
-               `,
-            },
-            {
-               firstImage: './gallery/gallery-prototypes-prototype21.jpg',
-               secondImage: './gallery/gallery-prototypes-prototype22.jpg',
-               thirdImage: './gallery/gallery-prototypes-prototype23.jpg',
                headline: 'Přepravní box na domácí mazlíčky',
                description:               
                `
@@ -129,6 +111,37 @@ const gallery = (function() {
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
                      <p class="u-list__text">výroba mechanicky funkční makety - předvýrobní vzor</p>
+                  </li>
+               `,
+            },
+            {
+               firstImage: './gallery/gallery-prototypes-prototype21.jpg',
+               secondImage: './gallery/gallery-prototypes-prototype22.jpg',
+               thirdImage: './gallery/gallery-prototypes-prototype23.jpg',
+               headline: 'Lappa Studio',
+               description:               
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">prototypy koster odhlučnovacích panelů</p>
+                  </li>
+               `,
+            },
+            {
+               firstImage: './gallery/gallery-prototypes-prototype31.jpg',
+               secondImage: './gallery/gallery-prototypes-prototype32.jpg',
+               thirdImage: './gallery/gallery-prototypes-prototype33.jpg',
+               headline: 'Zámková pojistka',
+               description:               
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">modelování repliky pojistky</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">frézování prototypu z PVC, 3D tisk 5 ks</p>
                   </li>
                `,
             },
@@ -152,13 +165,18 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project21.jpg',
                secondImage: './gallery/gallery-manufacturing-project22.jpg',
                thirdImage: './gallery/gallery-manufacturing-project23.jpg',
-               headline: 'Zakázkový konferenční stolek',
+               headline: 'Smrkový stolek',
                description:
                `
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
                      <p class="u-list__text">konferenční stolek na míru</p>
                   </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">nestandardní výška - 45 cm</p>
+                   </li>
 
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
@@ -193,7 +211,7 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project41.jpg',
                secondImage: './gallery/gallery-manufacturing-project42.jpg',
                thirdImage: './gallery/gallery-manufacturing-project43.jpg',
-               headline: 'Skládací barové stoly na eventy',
+               headline: 'Skládací barové stoly',
                description:
                `
                   <li class="u-list__item u-list__item--description">
