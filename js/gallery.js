@@ -100,6 +100,29 @@ const gallery = (function() {
                firstImage: './gallery/gallery-prototypes-prototype11.jpg',
                secondImage: './gallery/gallery-prototypes-prototype12.jpg',
                thirdImage: './gallery/gallery-prototypes-prototype13.jpg',
+               headline: 'Rostoucí židle',
+               description:               
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">vývoj 'rostoucích' stoliček pro náš e-shop</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">funkční, elegantní, unikátní v bio barvách</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">prototyp no.5</p>
+                  </li>
+               `,
+            },
+            {
+               firstImage: './gallery/gallery-prototypes-prototype21.jpg',
+               secondImage: './gallery/gallery-prototypes-prototype22.jpg',
+               thirdImage: './gallery/gallery-prototypes-prototype23.jpg',
                headline: 'Přepravní box na domácí mazlíčky',
                description:               
                `
@@ -115,9 +138,9 @@ const gallery = (function() {
                `,
             },
             {
-               firstImage: './gallery/gallery-prototypes-prototype21.jpg',
-               secondImage: './gallery/gallery-prototypes-prototype22.jpg',
-               thirdImage: './gallery/gallery-prototypes-prototype23.jpg',
+               firstImage: './gallery/gallery-prototypes-prototype31.jpg',
+               secondImage: './gallery/gallery-prototypes-prototype32.jpg',
+               thirdImage: './gallery/gallery-prototypes-prototype33.jpg',
                headline: 'Lappa Studio',
                description:               
                `
@@ -128,9 +151,9 @@ const gallery = (function() {
                `,
             },
             {
-               firstImage: './gallery/gallery-prototypes-prototype31.jpg',
-               secondImage: './gallery/gallery-prototypes-prototype32.jpg',
-               thirdImage: './gallery/gallery-prototypes-prototype33.jpg',
+               firstImage: './gallery/gallery-prototypes-prototype41.jpg',
+               secondImage: './gallery/gallery-prototypes-prototype42.jpg',
+               thirdImage: './gallery/gallery-prototypes-prototype43.jpg',
                headline: 'Zámková pojistka',
                description:               
                `
@@ -157,7 +180,7 @@ const gallery = (function() {
                `
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
-                     <p class="u-list__text">Kompletní realizace interiéru kavárny</p>
+                     <p class="u-list__text">kompletní realizace interiéru kavárny</p>
                   </li>
                `,
             },
@@ -188,6 +211,19 @@ const gallery = (function() {
                firstImage: './gallery/gallery-manufacturing-project31.jpg',
                secondImage: './gallery/gallery-manufacturing-project32.jpg',
                thirdImage: './gallery/gallery-manufacturing-project33.jpg',
+               headline: 'Dubové stolky na míru',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">kombinace masivu a oceli</p>
+                  </li>
+               `,
+            },
+            {
+               firstImage: './gallery/gallery-manufacturing-project41.jpg',
+               secondImage: './gallery/gallery-manufacturing-project42.jpg',
+               thirdImage: './gallery/gallery-manufacturing-project43.jpg',
                headline: 'Podsvícené vytríny',
                description:
                `
@@ -208,9 +244,9 @@ const gallery = (function() {
                `,
             },
             {
-               firstImage: './gallery/gallery-manufacturing-project41.jpg',
-               secondImage: './gallery/gallery-manufacturing-project42.jpg',
-               thirdImage: './gallery/gallery-manufacturing-project43.jpg',
+               firstImage: './gallery/gallery-manufacturing-project51.jpg',
+               secondImage: './gallery/gallery-manufacturing-project52.jpg',
+               thirdImage: './gallery/gallery-manufacturing-project53.jpg',
                headline: 'Skládací barové stoly',
                description:
                `
@@ -231,9 +267,9 @@ const gallery = (function() {
                `,
             },
             {
-               firstImage: './gallery/gallery-manufacturing-project51.jpg',
-               secondImage: './gallery/gallery-manufacturing-project52.jpg',
-               thirdImage: './gallery/gallery-manufacturing-project53.jpg',
+               firstImage: './gallery/gallery-manufacturing-project61.jpg',
+               secondImage: './gallery/gallery-manufacturing-project62.jpg',
+               thirdImage: './gallery/gallery-manufacturing-project63.jpg',
                headline: 'Posilovací stalky',
                description:
                `
@@ -250,6 +286,29 @@ const gallery = (function() {
                   <li class="u-list__item u-list__item--description">
                      <span class="u-list__slash">/</span>
                      <p class="u-list__text">oboustranně vypálené logo</p>
+                  </li>
+               `,
+            },
+            {
+               firstImage: './gallery/gallery-manufacturing-project71.jpg',
+               secondImage: './gallery/gallery-manufacturing-project72.jpg',
+               thirdImage: './gallery/gallery-manufacturing-project73.jpg',
+               headline: 'Stage baner',
+               description:
+               `
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">světelný stage baner pro DJe</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">360° naklopení, karabiny pro zavěšení</p>
+                  </li>
+
+                  <li class="u-list__item u-list__item--description">
+                     <span class="u-list__slash">/</span>
+                     <p class="u-list__text">RGBW podsvícení</p>
                   </li>
                `,
             },
